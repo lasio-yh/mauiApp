@@ -3,6 +3,12 @@
 ##
 ## Get latest from https://github.com/github/gitignore/blob/master/VisualStudio.gitignore
 
+.nuspec/**/*.dll
+.nuspec/**/*.dylib
+.nuspec/**/*.so
+.XamarinFormsVersionFile.txt
+templatesTest/
+
 # User-specific files
 *.rsuser
 *.suo
@@ -23,13 +29,14 @@ mono_crash.*
 [Rr]eleases/
 x64/
 x86/
+bin/
+obj/
 [Ww][Ii][Nn]32/
 [Aa][Rr][Mm]/
 [Aa][Rr][Mm]64/
 bld/
 [Bb]in/
 [Oo]bj/
-[Oo]ut/
 [Ll]og/
 [Ll]ogs/
 
@@ -317,8 +324,8 @@ __pycache__/
 *.pyc
 
 # Cake - Uncomment if you are using it
-# tools/**
-# !tools/packages.config
+tools/**
+!tools/packages.config
 
 # Tabs Studio
 *.tss
@@ -361,3 +368,12 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+.DS_Store
+
+# Android Studio
+.gradle/
+.idea/
+local.properties
+
+# Directory Build overrides for local setups
+Directory.Build.Override.props

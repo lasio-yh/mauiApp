@@ -213,7 +213,6 @@ D:\repository\mauiApp\ShellApp\ShellApp\bin\Debug\net6.0-ios\iossimulator-x64\li
 D:\repository\mauiApp\ShellApp\ShellApp\bin\Debug\net6.0-ios\iossimulator-x64\libxamarin-dotnet-debug.dylib
 D:\repository\mauiApp\ShellApp\ShellApp\bin\Debug\net6.0-ios\iossimulator-x64\libxamarin-dotnet.a
 D:\repository\mauiApp\ShellApp\ShellApp\bin\Debug\net6.0-ios\iossimulator-x64\libxamarin-dotnet.dylib
-D:\repository\mauiApp\ShellApp\ShellApp\obj\Debug\net6.0-ios\iossimulator-x64\build-signature\signature
 D:\repository\mauiApp\ShellApp\ShellApp\obj\Debug\net6.0-ios\iossimulator-x64\mauiimage.inputs
 D:\repository\mauiApp\ShellApp\ShellApp\obj\Debug\net6.0-ios\iossimulator-x64\mauifont.inputs
 D:\repository\mauiApp\ShellApp\ShellApp\obj\Debug\net6.0-ios\iossimulator-x64\mauisplash.inputs
