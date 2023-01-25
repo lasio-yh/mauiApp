@@ -1943,6 +1943,16 @@
         "build": {
           "buildTransitive/net6.0-android31.0/Xamarin.KotlinX.Coroutines.Core.Jvm.targets": {}
         }
+      },
+      "Foundation/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/Foundation.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Foundation.dll": {}
+        }
       }
     },
     "net6.0-android31.0/android-arm": {
@@ -3886,6 +3896,16 @@
         },
         "build": {
           "buildTransitive/net6.0-android31.0/Xamarin.KotlinX.Coroutines.Core.Jvm.targets": {}
+        }
+      },
+      "Foundation/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/Foundation.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Foundation.dll": {}
         }
       }
     },
@@ -5831,6 +5851,16 @@
         "build": {
           "buildTransitive/net6.0-android31.0/Xamarin.KotlinX.Coroutines.Core.Jvm.targets": {}
         }
+      },
+      "Foundation/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/Foundation.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Foundation.dll": {}
+        }
       }
     },
     "net6.0-android31.0/android-x64": {
@@ -7774,6 +7804,16 @@
         },
         "build": {
           "buildTransitive/net6.0-android31.0/Xamarin.KotlinX.Coroutines.Core.Jvm.targets": {}
+        }
+      },
+      "Foundation/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/Foundation.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Foundation.dll": {}
         }
       }
     },
@@ -9719,6 +9759,16 @@
         "build": {
           "buildTransitive/net6.0-android31.0/Xamarin.KotlinX.Coroutines.Core.Jvm.targets": {}
         }
+      },
+      "Foundation/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/Foundation.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Foundation.dll": {}
+        }
       }
     },
     "net6.0-android31.0/ios-arm64": {
@@ -11662,6 +11712,16 @@
         },
         "build": {
           "buildTransitive/net6.0-android31.0/Xamarin.KotlinX.Coroutines.Core.Jvm.targets": {}
+        }
+      },
+      "Foundation/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/Foundation.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Foundation.dll": {}
         }
       }
     },
@@ -13607,6 +13667,16 @@
         "build": {
           "buildTransitive/net6.0-android31.0/Xamarin.KotlinX.Coroutines.Core.Jvm.targets": {}
         }
+      },
+      "Foundation/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/Foundation.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Foundation.dll": {}
+        }
       }
     },
     "net6.0-android31.0/win10-x64": {
@@ -15551,6 +15621,16 @@
         "build": {
           "buildTransitive/net6.0-android31.0/Xamarin.KotlinX.Coroutines.Core.Jvm.targets": {}
         }
+      },
+      "Foundation/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/Foundation.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Foundation.dll": {}
+        }
       }
     },
     "net6.0-ios16.1": {
@@ -15766,6 +15846,19 @@
           "ref/net6.0/System.Runtime.InteropServices.dll": {
             "related": ".xml"
           }
+        }
+      },
+      "Foundation/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "System.Runtime.InteropServices.NFloat.Internal": "6.0.1"
+        },
+        "compile": {
+          "bin/placeholder/Foundation.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Foundation.dll": {}
         }
       }
     },
@@ -15983,6 +16076,19 @@
             "related": ".xml"
           }
         }
+      },
+      "Foundation/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "System.Runtime.InteropServices.NFloat.Internal": "6.0.1"
+        },
+        "compile": {
+          "bin/placeholder/Foundation.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Foundation.dll": {}
+        }
       }
     },
     "net6.0-ios16.1/android-arm64": {
@@ -16198,6 +16304,19 @@
           "ref/net6.0/System.Runtime.InteropServices.dll": {
             "related": ".xml"
           }
+        }
+      },
+      "Foundation/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "System.Runtime.InteropServices.NFloat.Internal": "6.0.1"
+        },
+        "compile": {
+          "bin/placeholder/Foundation.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Foundation.dll": {}
         }
       }
     },
@@ -16415,6 +16534,19 @@
             "related": ".xml"
           }
         }
+      },
+      "Foundation/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "System.Runtime.InteropServices.NFloat.Internal": "6.0.1"
+        },
+        "compile": {
+          "bin/placeholder/Foundation.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Foundation.dll": {}
+        }
       }
     },
     "net6.0-ios16.1/android-x86": {
@@ -16630,6 +16762,19 @@
           "ref/net6.0/System.Runtime.InteropServices.dll": {
             "related": ".xml"
           }
+        }
+      },
+      "Foundation/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "System.Runtime.InteropServices.NFloat.Internal": "6.0.1"
+        },
+        "compile": {
+          "bin/placeholder/Foundation.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Foundation.dll": {}
         }
       }
     },
@@ -16847,6 +16992,19 @@
             "related": ".xml"
           }
         }
+      },
+      "Foundation/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "System.Runtime.InteropServices.NFloat.Internal": "6.0.1"
+        },
+        "compile": {
+          "bin/placeholder/Foundation.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Foundation.dll": {}
+        }
       }
     },
     "net6.0-ios16.1/maccatalyst-x64": {
@@ -17062,6 +17220,19 @@
           "ref/net6.0/System.Runtime.InteropServices.dll": {
             "related": ".xml"
           }
+        }
+      },
+      "Foundation/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "System.Runtime.InteropServices.NFloat.Internal": "6.0.1"
+        },
+        "compile": {
+          "bin/placeholder/Foundation.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Foundation.dll": {}
         }
       }
     },
@@ -17279,6 +17450,19 @@
             "related": ".xml"
           }
         }
+      },
+      "Foundation/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "System.Runtime.InteropServices.NFloat.Internal": "6.0.1"
+        },
+        "compile": {
+          "bin/placeholder/Foundation.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Foundation.dll": {}
+        }
       }
     },
     "net6.0-maccatalyst16.1": {
@@ -17494,6 +17678,19 @@
           "ref/net6.0/System.Runtime.InteropServices.dll": {
             "related": ".xml"
           }
+        }
+      },
+      "Foundation/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "System.Runtime.InteropServices.NFloat.Internal": "6.0.1"
+        },
+        "compile": {
+          "bin/placeholder/Foundation.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Foundation.dll": {}
         }
       }
     },
@@ -17711,6 +17908,19 @@
             "related": ".xml"
           }
         }
+      },
+      "Foundation/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "System.Runtime.InteropServices.NFloat.Internal": "6.0.1"
+        },
+        "compile": {
+          "bin/placeholder/Foundation.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Foundation.dll": {}
+        }
       }
     },
     "net6.0-maccatalyst16.1/android-arm64": {
@@ -17926,6 +18136,19 @@
           "ref/net6.0/System.Runtime.InteropServices.dll": {
             "related": ".xml"
           }
+        }
+      },
+      "Foundation/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "System.Runtime.InteropServices.NFloat.Internal": "6.0.1"
+        },
+        "compile": {
+          "bin/placeholder/Foundation.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Foundation.dll": {}
         }
       }
     },
@@ -18143,6 +18366,19 @@
             "related": ".xml"
           }
         }
+      },
+      "Foundation/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "System.Runtime.InteropServices.NFloat.Internal": "6.0.1"
+        },
+        "compile": {
+          "bin/placeholder/Foundation.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Foundation.dll": {}
+        }
       }
     },
     "net6.0-maccatalyst16.1/android-x86": {
@@ -18358,6 +18594,19 @@
           "ref/net6.0/System.Runtime.InteropServices.dll": {
             "related": ".xml"
           }
+        }
+      },
+      "Foundation/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "System.Runtime.InteropServices.NFloat.Internal": "6.0.1"
+        },
+        "compile": {
+          "bin/placeholder/Foundation.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Foundation.dll": {}
         }
       }
     },
@@ -18575,6 +18824,19 @@
             "related": ".xml"
           }
         }
+      },
+      "Foundation/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "System.Runtime.InteropServices.NFloat.Internal": "6.0.1"
+        },
+        "compile": {
+          "bin/placeholder/Foundation.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Foundation.dll": {}
+        }
       }
     },
     "net6.0-maccatalyst16.1/maccatalyst-x64": {
@@ -18791,6 +19053,19 @@
             "related": ".xml"
           }
         }
+      },
+      "Foundation/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "System.Runtime.InteropServices.NFloat.Internal": "6.0.1"
+        },
+        "compile": {
+          "bin/placeholder/Foundation.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Foundation.dll": {}
+        }
       }
     },
     "net6.0-maccatalyst16.1/win10-x64": {
@@ -19006,6 +19281,19 @@
           "ref/net6.0/System.Runtime.InteropServices.dll": {
             "related": ".xml"
           }
+        }
+      },
+      "Foundation/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "System.Runtime.InteropServices.NFloat.Internal": "6.0.1"
+        },
+        "compile": {
+          "bin/placeholder/Foundation.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Foundation.dll": {}
         }
       }
     },
@@ -19348,6 +19636,16 @@
         "build": {
           "buildTransitive/netcoreapp3.1/_._": {}
         }
+      },
+      "Foundation/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/Foundation.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Foundation.dll": {}
+        }
       }
     },
     "net6.0-windows10.0.19041/android-arm": {
@@ -19660,6 +19958,16 @@
         },
         "build": {
           "buildTransitive/netcoreapp3.1/_._": {}
+        }
+      },
+      "Foundation/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/Foundation.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Foundation.dll": {}
         }
       }
     },
@@ -19974,6 +20282,16 @@
         "build": {
           "buildTransitive/netcoreapp3.1/_._": {}
         }
+      },
+      "Foundation/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/Foundation.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Foundation.dll": {}
+        }
       }
     },
     "net6.0-windows10.0.19041/android-x64": {
@@ -20286,6 +20604,16 @@
         },
         "build": {
           "buildTransitive/netcoreapp3.1/_._": {}
+        }
+      },
+      "Foundation/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/Foundation.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Foundation.dll": {}
         }
       }
     },
@@ -20600,6 +20928,16 @@
         "build": {
           "buildTransitive/netcoreapp3.1/_._": {}
         }
+      },
+      "Foundation/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/Foundation.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Foundation.dll": {}
+        }
       }
     },
     "net6.0-windows10.0.19041/ios-arm64": {
@@ -20913,6 +21251,16 @@
         "build": {
           "buildTransitive/netcoreapp3.1/_._": {}
         }
+      },
+      "Foundation/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/Foundation.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Foundation.dll": {}
+        }
       }
     },
     "net6.0-windows10.0.19041/maccatalyst-x64": {
@@ -21225,6 +21573,16 @@
         },
         "build": {
           "buildTransitive/netcoreapp3.1/_._": {}
+        }
+      },
+      "Foundation/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/Foundation.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Foundation.dll": {}
         }
       }
     },
@@ -21544,6 +21902,16 @@
         },
         "build": {
           "buildTransitive/netcoreapp3.1/_._": {}
+        }
+      },
+      "Foundation/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/Foundation.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Foundation.dll": {}
         }
       }
     }
@@ -24543,24 +24911,33 @@
         "xamarin.kotlinx.coroutines.core.jvm.1.6.0.1.nupkg.sha512",
         "xamarin.kotlinx.coroutines.core.jvm.nuspec"
       ]
+    },
+    "Foundation/1.0.0": {
+      "type": "project",
+      "path": "../Foundation/Foundation.csproj",
+      "msbuildProject": "../Foundation/Foundation.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0-android31.0": [
+      "Foundation >= 1.0.0",
       "Microsoft.Maui.Dependencies >= 6.0.548",
       "Microsoft.Maui.Extensions >= 6.0.548"
     ],
     "net6.0-ios16.1": [
+      "Foundation >= 1.0.0",
       "Microsoft.Maui.Dependencies >= 6.0.548",
       "Microsoft.Maui.Extensions >= 6.0.548",
       "System.Runtime.InteropServices.NFloat.Internal >= 6.0.1"
     ],
     "net6.0-maccatalyst16.1": [
+      "Foundation >= 1.0.0",
       "Microsoft.Maui.Dependencies >= 6.0.548",
       "Microsoft.Maui.Extensions >= 6.0.548",
       "System.Runtime.InteropServices.NFloat.Internal >= 6.0.1"
     ],
     "net6.0-windows10.0.19041": [
+      "Foundation >= 1.0.0",
       "Microsoft.Maui.Dependencies >= 6.0.548",
       "Microsoft.Maui.Extensions >= 6.0.548",
       "Microsoft.Windows.SDK.BuildTools >= 10.0.22000.194"
@@ -24604,19 +24981,35 @@
       "frameworks": {
         "net6.0-android31.0": {
           "targetAlias": "net6.0-android",
-          "projectReferences": {}
+          "projectReferences": {
+            "D:\\repository\\mauiApp\\ShellApp\\Foundation\\Foundation.csproj": {
+              "projectPath": "D:\\repository\\mauiApp\\ShellApp\\Foundation\\Foundation.csproj"
+            }
+          }
         },
         "net6.0-ios16.1": {
           "targetAlias": "net6.0-ios",
-          "projectReferences": {}
+          "projectReferences": {
+            "D:\\repository\\mauiApp\\ShellApp\\Foundation\\Foundation.csproj": {
+              "projectPath": "D:\\repository\\mauiApp\\ShellApp\\Foundation\\Foundation.csproj"
+            }
+          }
         },
         "net6.0-maccatalyst16.1": {
           "targetAlias": "net6.0-maccatalyst",
-          "projectReferences": {}
+          "projectReferences": {
+            "D:\\repository\\mauiApp\\ShellApp\\Foundation\\Foundation.csproj": {
+              "projectPath": "D:\\repository\\mauiApp\\ShellApp\\Foundation\\Foundation.csproj"
+            }
+          }
         },
         "net6.0-windows10.0.19041": {
           "targetAlias": "net6.0-windows10.0.19041.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "D:\\repository\\mauiApp\\ShellApp\\Foundation\\Foundation.csproj": {
+              "projectPath": "D:\\repository\\mauiApp\\ShellApp\\Foundation\\Foundation.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

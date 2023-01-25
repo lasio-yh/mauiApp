@@ -34,6 +34,9 @@
     <AppxPackagedFile Include="D:\repository\mauiApp\ShellApp\ShellApp\bin\Debug\net6.0-windows10.0.19041.0\win10-x64\ShellApp.dll">
       <PackagePath>ShellApp.dll</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\repository\mauiApp\ShellApp\Foundation\bin\Debug\net6.0-windows10.0.19041.0\Foundation.dll">
+      <PackagePath>Foundation.dll</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="D:\repository\mauiApp\ShellApp\ShellApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>ShellApp.exe</PackagePath>
     </AppxPackagedFile>

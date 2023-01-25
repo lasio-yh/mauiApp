@@ -358,3 +358,5 @@ D:\repository\mauiApp\ShellApp\ShellApp\obj\Debug\net6.0-windows10.0.19041.0\win
 D:\repository\mauiApp\ShellApp\ShellApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\qualifiers.txt.intermediate
 D:\repository\mauiApp\ShellApp\ShellApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\MultipleQualifiersPerDimensionFound.txt
 D:\repository\mauiApp\ShellApp\ShellApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\ProjectArchitectures.txt
+D:\repository\mauiApp\ShellApp\ShellApp\bin\Debug\net6.0-windows10.0.19041.0\win10-x64\Foundation.dll
+D:\repository\mauiApp\ShellApp\ShellApp\bin\Debug\net6.0-windows10.0.19041.0\win10-x64\Foundation.pdb

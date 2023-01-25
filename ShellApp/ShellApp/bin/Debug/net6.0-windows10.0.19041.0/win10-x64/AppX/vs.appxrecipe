@@ -29,25 +29,29 @@
     <AppXManifest Include="D:\repository\mauiApp\ShellApp\ShellApp\bin\Debug\net6.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2023-01-24T10:57:24.239</Modified>
+      <Modified>2023-01-25T01:07:19.811</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="D:\repository\mauiApp\ShellApp\ShellApp\bin\Debug\net6.0-windows10.0.19041.0\win10-x64\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2023-01-24T10:57:23.485</Modified>
+      <Modified>2023-01-25T01:07:18.752</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\repository\mauiApp\ShellApp\ShellApp\bin\Debug\net6.0-windows10.0.19041.0\win10-x64\ShellApp.runtimeconfig.json">
       <PackagePath>ShellApp.runtimeconfig.json</PackagePath>
-      <Modified>2023-01-24T10:57:22.930</Modified>
+      <Modified>2023-01-25T01:04:06.683</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\repository\mauiApp\ShellApp\ShellApp\bin\Debug\net6.0-windows10.0.19041.0\win10-x64\ShellApp.dll">
       <PackagePath>ShellApp.dll</PackagePath>
-      <Modified>2023-01-24T10:57:19.445</Modified>
+      <Modified>2023-01-25T01:07:16.556</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\repository\mauiApp\ShellApp\Foundation\bin\Debug\net6.0-windows10.0.19041.0\Foundation.dll">
+      <PackagePath>Foundation.dll</PackagePath>
+      <Modified>2023-01-25T01:04:52.595</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\repository\mauiApp\ShellApp\ShellApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>ShellApp.exe</PackagePath>
-      <Modified>2023-01-24T10:57:19.603</Modified>
+      <Modified>2023-01-25T01:07:16.843</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\young\.nuget\packages\microsoft.netcore.app.runtime.win-x64\6.0.13\runtimes\win-x64\lib\net6.0\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -1063,7 +1067,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\repository\mauiApp\ShellApp\ShellApp\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\ShellApp.deps.json">
       <PackagePath>ShellApp.deps.json</PackagePath>
-      <Modified>2023-01-24T10:57:23.909</Modified>
+      <Modified>2023-01-25T01:07:19.310</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\young\.nuget\packages\microsoft.maui.controls.ref.win\6.0.548\ref\net6.0-windows10.0.19041\Microsoft.Maui.Controls.Compatibility.pri">
       <PackagePath>Microsoft.Maui.Controls.Compatibility.pri</PackagePath>
