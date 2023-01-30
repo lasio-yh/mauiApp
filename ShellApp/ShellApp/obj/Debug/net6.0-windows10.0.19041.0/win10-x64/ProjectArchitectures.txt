@@ -1,2 +1,0 @@
-D:\repository\mauiApp\ShellApp\Foundation\Foundation.csproj;neutral
-D:\repository\mauiApp\ShellApp\ShellApp\ShellApp.csproj;x64
