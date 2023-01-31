@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="ShalomCake.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:views="clr-namespace:ShalomCake.Views"
+    xmlns:local="clr-namespace:ShalomCake">
+
+    <ShellContent
+        Shell.NavBarIsVisible="true"
+        Title="Main"
+        Icon="iconblank.png"
+        ContentTemplate="{DataTemplate views:MainPage}"
+        Route="MainPage" />
+    <ShellContent
+        Shell.NavBarIsVisible="true"
+        Title="Rate"
+        Icon="icondrawing.png"
+        ContentTemplate="{DataTemplate views:RatePage}"
+        Route="RatePage" />
+    <ShellContent
+        Shell.NavBarIsVisible="true"
+        Title="List"
+        Icon="iconlistdetail.png"
+        ContentTemplate="{DataTemplate views:ListPage}"
+        Route="ListPage" />
+    <ShellContent
+        Shell.NavBarIsVisible="true"
+        Title="Order"
+        Icon="iconsample.png"
+        ContentTemplate="{DataTemplate views:OrderPage}"
+        Route="OrderPage" />
+    <ShellContent
+        Shell.NavBarIsVisible="true"
+        Title="Map"
+        Icon="iconwebview.png"
+        ContentTemplate="{DataTemplate views:MapPage}"
+        Route="MapPage" />
+    <ShellContent
+        Shell.NavBarIsVisible="true"
+        Title="Localization"
+        Icon="iconlocalization.png"
+        ContentTemplate="{DataTemplate views:LocalizationPage}"
+        Route="LocalizationPage" />
+</Shell>
