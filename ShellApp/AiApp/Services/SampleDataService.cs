@@ -5,11 +5,8 @@ public class SampleDataService
     public async Task<IEnumerable<SampleItem>> GetItems()
     {
         await Task.Delay(1000); // Artifical delay to give the impression of work
-
         var random = new Random().Next();
-
         var result = new List<SampleItem>();
-
         for (var i = 0; i < 40; i++)
         {
             result.Add(new SampleItem
@@ -20,5 +17,31 @@ public class SampleDataService
         }
 
         return result;
+    }
+
+    public Timer _timer;
+    public delegate void PushHandler(object args);
+    public PushHandler _push;
+
+    /// <summary>
+    /// 타이머를 생성합니다.
+    /// </summary>
+    public void CreateTimer(PushHandler callBack)
+    {
+        _push = callBack;
+        _timer = new Timer(CallBackProc);
+    }
+
+    /// <summary>
+    /// 타이머를 설정합니다.
+    /// </summary>
+    public void Setting(int duetime, int period)
+    {
+        _timer.Change(duetime, period);
+    }
+
+    private void CallBackProc(object obj)
+    {
+        _push(obj);
     }
 }

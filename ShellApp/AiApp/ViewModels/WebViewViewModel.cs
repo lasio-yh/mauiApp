@@ -8,7 +8,7 @@ public partial class WebViewViewModel : BaseViewModel
     public WebViewViewModel()
     {
         // TODO: Update the default URL
-        Source = "https://github.com/sponsors/mrlacey";
+        Source = "https://www.naver.com";
     }
 
     [RelayCommand]
@@ -24,19 +24,19 @@ public partial class WebViewViewModel : BaseViewModel
     [RelayCommand]
     private void NavigateBack(WebView webView)
     {
-        if (webView.CanGoBack)
-        {
-            webView.GoBack();
-        }
+        if (!webView.CanGoBack)
+            return;
+
+        webView.GoBack();
     }
 
     [RelayCommand]
     private void NavigateForward(WebView webView)
     {
-        if (webView.CanGoForward)
-        {
-            webView.GoForward();
-        }
+        if (!webView.CanGoForward)
+            return;
+
+        webView.GoForward();
     }
 
     [RelayCommand]
