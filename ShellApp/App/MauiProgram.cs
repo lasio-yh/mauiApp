@@ -24,8 +24,8 @@ public static class MauiProgram
         builder.Services.AddSingleton<OrderListViewModel>();
         builder.Services.AddSingleton<OrderListPage>();
 
-        builder.Services.AddSingleton<ManageViewModel>();
-        builder.Services.AddSingleton<ManagePage>();
+        builder.Services.AddTransient<ManageViewModel>();
+        builder.Services.AddTransient<ManagePage>();
 
         builder.Services.AddSingleton<LocalizationViewModel>();
         builder.Services.AddSingleton<LocalizationPage>();

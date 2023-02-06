@@ -1,6 +1,4 @@
-﻿using Microsoft.Maui.Controls.Shapes;
-
-namespace ShalomCake.ViewModels;
+﻿namespace ShalomCake.ViewModels;
 
 [QueryProperty(nameof(Item), "Item")]
 public partial class OrderListDetailViewModel : BaseViewModel

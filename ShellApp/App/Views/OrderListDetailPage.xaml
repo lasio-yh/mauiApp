@@ -6,8 +6,6 @@
              xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
              x:Class="ShalomCake.Views.OrderListDetailPage"
              x:DataType="vm:OrderListDetailViewModel">
-
-
     <Grid ColumnDefinitions="*,*" RowDefinitions="*,auto">
         <WebView x:Name="webview" Source="{Binding Source}">
             <WebView.Behaviors>
@@ -23,35 +21,35 @@
         <ScrollView Grid.Row="0" Grid.Column="1">
             <VerticalStackLayout Margin="12"  Spacing="25" Padding="30,0" >
                 <Label Text="주문번호" TextColor="{AppThemeBinding Light={StaticResource Primary}, Dark={StaticResource Black}}" FontSize="Large" HorizontalOptions="Start" />
-                <Label Text="{Binding Item.Id}" FontSize="Medium" HorizontalOptions="Start" />
+                <Editor Text="{Binding Item.Id}" FontSize="Medium" HorizontalOptions="Start" />
                 <Label Text="접수시간" TextColor="{AppThemeBinding Light={StaticResource Primary}, Dark={StaticResource Black}}" FontSize="Large" HorizontalOptions="Start" />
-                <Label Text="{Binding Item.AcceptTime}" FontSize="Medium" HorizontalOptions="Start" />
+                <Editor Text="{Binding Item.AcceptTime}" FontSize="Medium" HorizontalOptions="Start" />
                 <Label Text="고객주소" TextColor="{AppThemeBinding Light={StaticResource Primary}, Dark={StaticResource Black}}" FontSize="Large" HorizontalOptions="Start" />
-                <Label Text="{Binding Item.CustomerAddress}" FontSize="Medium" HorizontalOptions="Start" />
+                <Editor Text="{Binding Item.CustomerAddress}" FontSize="Medium" HorizontalOptions="Start" />
                 <Label Text="고객연락처" TextColor="{AppThemeBinding Light={StaticResource Primary}, Dark={StaticResource Black}}" FontSize="Large" HorizontalOptions="Start" />
-                <Label Text="{Binding Item.CustomerTel}" FontSize="Medium" HorizontalOptions="Start" />
+                <Editor Text="{Binding Item.CustomerTel}" FontSize="Medium" HorizontalOptions="Start" />
                 <Label Text="고객요청사항" TextColor="{AppThemeBinding Light={StaticResource Primary}, Dark={StaticResource Black}}"  FontSize="Large" HorizontalOptions="Start" />
-                <Label Text="{Binding Item.CustomerNotice}" FontSize="Medium" HorizontalOptions="Start" />
+                <Editor Text="{Binding Item.CustomerNotice}" FontSize="Medium" HorizontalOptions="Start" />
                 <Label Text="메뉴" TextColor="{AppThemeBinding Light={StaticResource Primary}, Dark={StaticResource Black}}" FontSize="Large" HorizontalOptions="Start" />
-                <Label Text="{Binding Item.Menu}"  FontSize="Medium" HorizontalOptions="Start" />
+                <Editor Text="{Binding Item.Menu}"  FontSize="Medium" HorizontalOptions="Start" />
                 <Label Text="주문금액" TextColor="{AppThemeBinding Light={StaticResource Primary}, Dark={StaticResource Black}}" FontSize="Large" HorizontalOptions="Start" />
-                <Label Text="{Binding Item.OrderCost}" FontSize="Medium" HorizontalOptions="Start" />
+                <Editor Text="{Binding Item.OrderCost}" FontSize="Medium" HorizontalOptions="Start" />
                 <Label Text="할인금액" TextColor="{AppThemeBinding Light={StaticResource Primary}, Dark={StaticResource Black}}" FontSize="Large" HorizontalOptions="Start" />
-                <Label Text="{Binding Item.DiscountCost}" FontSize="Medium" HorizontalOptions="Start" />
+                <Editor Text="{Binding Item.DiscountCost}" FontSize="Medium" HorizontalOptions="Start" />
                 <Label Text="결제금액" TextColor="{AppThemeBinding Light={StaticResource Primary}, Dark={StaticResource Black}}" FontSize="Large" HorizontalOptions="Start" />
-                <Label Text="{Binding Item.PaymentCost}" FontSize="Medium" HorizontalOptions="Start" />
+                <Editor Text="{Binding Item.PaymentCost}" FontSize="Medium" HorizontalOptions="Start" />
                 <Label Text="배송비" TextColor="{AppThemeBinding Light={StaticResource Primary}, Dark={StaticResource Black}}" FontSize="Large" HorizontalOptions="Start" />
-                <Label Text="{Binding Item.DeliveraCost}" FontSize="Medium" HorizontalOptions="Start" />
+                <Editor Text="{Binding Item.DeliveraCost}" FontSize="Medium" HorizontalOptions="Start" />
             </VerticalStackLayout>
         </ScrollView>
         <Button
             Grid.Row="1"
             Command="{Binding OkCommand}"
-            Text="수락" />
+            Text="주문 수락" />
         <Button
             Grid.Row="1"
             Grid.Column="1"
             Command="{Binding RefuseCommand}"
-            Text="거절" />
+            Text="주문 거절" />
     </Grid>
 </ContentPage>

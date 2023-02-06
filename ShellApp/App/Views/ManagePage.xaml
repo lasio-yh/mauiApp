@@ -4,71 +4,29 @@
              xmlns:vm="clr-namespace:ShalomCake.ViewModels"
              x:Class="ShalomCake.Views.ManagePage"
              x:DataType="vm:ManageViewModel">
-
-    <ScrollView>
-        <VerticalStackLayout
-            Spacing="25"
-            Padding="30,0"
-            VerticalOptions="Center">
-
-            <Image
-                Source="dotnet_bot.png"
-                SemanticProperties.Description="Cute dot net bot waving hi to you!"
-                HeightRequest="200"
-                HorizontalOptions="Center" />
-
-            <Label
-                Text="Hello, World!"
-                SemanticProperties.HeadingLevel="Level1"
-                FontSize="32"
-                HorizontalOptions="Center" />
-
-            <Label
-                Text="Welcome to .NET Multi-platform App UI"
-                SemanticProperties.HeadingLevel="Level2"
-                SemanticProperties.Description="Welcome to dot net Multi platform App U I"
-                FontSize="18"
-                HorizontalOptions="Center" />
-
-            <Button
-                Text="{Binding Message}"
-                SemanticProperties.Hint="Counts the number of times you click"
-                Command="{Binding CounterClickedCommand}"
-                HorizontalOptions="Center" />
-            
-        </VerticalStackLayout>
-    </ScrollView>
-
-    <!--<Grid RowDefinitions="*,Auto">
-        <WebView x:Name="webview" Source="{Binding Source}">
-            <WebView.Behaviors>
-                <toolkit:EventToCommandBehavior
-                    EventName="Navigated"
-                    Command="{Binding WebViewNavigatedCommand}">
-                    <toolkit:EventToCommandBehavior.EventArgsConverter>
-                        <conv:WebNavigatedEventArgsConverter/>
-                    </toolkit:EventToCommandBehavior.EventArgsConverter>
-                </toolkit:EventToCommandBehavior>
-            </WebView.Behaviors>
-        </WebView>
-        <HorizontalStackLayout Grid.Row="1" HorizontalOptions="Center" Spacing="12">
-            <Button
-                Text="Back"
-                IsEnabled="{Binding Source={x:Reference webview}, Path=CanGoBack}"
-                Command="{Binding NavigateBackCommand}"
-                CommandParameter="{Binding Source={x:Reference webview}}" />
-            <Button
-                Text="Forward"
-                IsEnabled="{Binding Source={x:Reference webview}, Path=CanGoForward}"
-                Command="{Binding NavigateForwardCommand}"
-                CommandParameter="{Binding Source={x:Reference webview}}" />
-            <Button
-                Text="Refresh"
-                Command="{Binding RefreshPageCommand}"
-                CommandParameter="{Binding Source={x:Reference webview}}" />
-            <Button
-                Text="Open in browser"
-                Command="{Binding OpenInBrowserCommand}" />
+    <Grid RowDefinitions="*,Auto">
+        <ScrollView Grid.Row="0" Grid.Column="1">
+            <VerticalStackLayout Margin="12"  Spacing="25" Padding="30,0" >
+                <Label Text="가게 코드" TextColor="{AppThemeBinding Light={StaticResource Primary}, Dark={StaticResource Black}}" FontSize="Large" HorizontalOptions="Start" />
+                <Label Text="{Binding Id}" FontSize="Medium" HorizontalOptions="Start" />
+                <Label Text="사업자 등록번호" TextColor="{AppThemeBinding Light={StaticResource Primary}, Dark={StaticResource Black}}" FontSize="Large" HorizontalOptions="Start" />
+                <Editor Text="{Binding StoreNo}" FontSize="Medium" HorizontalOptions="Start" />
+                <Label Text="대표자명" TextColor="{AppThemeBinding Light={StaticResource Primary}, Dark={StaticResource Black}}" FontSize="Large" HorizontalOptions="Start" />
+                <Editor Text="{Binding Owner}" FontSize="Medium" HorizontalOptions="Start" />
+                <Label Text="가게명" TextColor="{AppThemeBinding Light={StaticResource Primary}, Dark={StaticResource Black}}" FontSize="Large" HorizontalOptions="Start" />
+                <Editor Text="{Binding StoreName}" FontSize="Medium" HorizontalOptions="Start" />
+                <Label Text="우편번호" TextColor="{AppThemeBinding Light={StaticResource Primary}, Dark={StaticResource Black}}" FontSize="Large" HorizontalOptions="Start" />
+                <Editor Text="{Binding StoreAddressNo}"  FontSize="Medium" HorizontalOptions="Start" />
+                <Label Text="가게 주소" TextColor="{AppThemeBinding Light={StaticResource Primary}, Dark={StaticResource Black}}" FontSize="Large" HorizontalOptions="Start" />
+                <Editor Text="{Binding StoreAddress}" FontSize="Medium" HorizontalOptions="Start" />
+                <Label Text="가게 연락처1" TextColor="{AppThemeBinding Light={StaticResource Primary}, Dark={StaticResource Black}}" FontSize="Large" HorizontalOptions="Start" />
+                <Editor Text="{Binding StoreTel1}" FontSize="Medium" HorizontalOptions="Start" />
+                <Label Text="가게 연락처2" TextColor="{AppThemeBinding Light={StaticResource Primary}, Dark={StaticResource Black}}"  FontSize="Large" HorizontalOptions="Start" />
+                <Editor Text="{Binding StoreTel2}" FontSize="Medium" HorizontalOptions="Start" />
+            </VerticalStackLayout>
+        </ScrollView>
+        <HorizontalStackLayout Grid.Row="1" HorizontalOptions="End" Spacing="12">
+            <Button Text="저장" SemanticProperties.HeadingLevel="Level1" FontSize="32" HorizontalOptions="End" Command="{Binding ApplyClickedCommand}"/>
         </HorizontalStackLayout>
-    </Grid>-->
+    </Grid>
 </ContentPage>
