@@ -1,6 +1,6 @@
 ﻿namespace ShalomCake.ViewModels;
 
-public partial class ListViewModel : BaseViewModel
+public partial class OrderListViewModel : BaseViewModel
 {
     readonly OrderService dataService;
 
@@ -10,7 +10,7 @@ public partial class ListViewModel : BaseViewModel
     [ObservableProperty]
     ObservableCollection<OrderItem> items;
 
-    public ListViewModel(OrderService service)
+    public OrderListViewModel(OrderService service)
     {
         dataService = service;
     }
@@ -34,7 +34,6 @@ public partial class ListViewModel : BaseViewModel
     public async Task LoadMore()
     {
         var items = await dataService.GetItems();
-
         foreach (var item in items)
         {
             Items.Add(item);
@@ -49,7 +48,7 @@ public partial class ListViewModel : BaseViewModel
     [RelayCommand]
     private async void GoToDetails(OrderItem item)
     {
-        await Shell.Current.GoToAsync(nameof(ListDetailPage), true, new Dictionary<string, object>
+        await Shell.Current.GoToAsync(nameof(OrderListDetailPage), true, new Dictionary<string, object>
         {
             { "Item", item }
         });

@@ -1,8 +1,8 @@
 ﻿namespace ShalomCake.Views;
 
-public partial class OrderPage : ContentPage
+public partial class LoginPage : ContentPage
 {
-	public OrderPage(OrderViewModel viewModel)
+	public LoginPage(LoginViewModel viewModel)
 	{
 		InitializeComponent();
 		BindingContext = viewModel;

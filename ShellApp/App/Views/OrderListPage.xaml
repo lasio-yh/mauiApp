@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:vm="clr-namespace:ShalomCake.ViewModels"
+             xmlns:m="clr-namespace:ShalomCake.Models"
+             x:Class="ShalomCake.Views.OrderListPage"
+             x:DataType="vm:OrderListViewModel">
+    <RefreshView IsRefreshing="{Binding IsRefreshing}" Command="{Binding RefreshingCommand}">
+        <HorizontalStackLayout >
+            <VerticalStackLayout Spacing="25" Padding="30,0" VerticalOptions="Center">
+                <Image Source="dotnet_bot.png" SemanticProperties.Description="Cute dot net bot waving hi to you!" HeightRequest="200" HorizontalOptions="Center" />
+                <Label Text="Hello, World!" SemanticProperties.HeadingLevel="Level1" FontSize="32" HorizontalOptions="Center" />
+                <Label Text="Welcome to .NET Multi-platform App UI" SemanticProperties.HeadingLevel="Level2" SemanticProperties.Description="Welcome to dot net Multi platform App U I"  FontSize="18" HorizontalOptions="Center" />
+            </VerticalStackLayout>
+            <CollectionView ItemsSource="{Binding Items}" RemainingItemsThreshold="10" RemainingItemsThresholdReachedCommand="{Binding LoadMoreCommand}">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate x:DataType="m:OrderItem">
+                        <Frame>
+                            <Frame.GestureRecognizers>
+                                <TapGestureRecognizer Command="{Binding Source={RelativeSource AncestorType={x:Type vm:OrderListViewModel}}, Path=GoToDetailsCommand}" CommandParameter="{Binding .}" />
+                            </Frame.GestureRecognizers>
+                            <HorizontalStackLayout HorizontalOptions="Fill">
+                                <Label Text="{Binding Status}" SemanticProperties.HeadingLevel="Level2" FontSize="Large" HorizontalOptions="Center" TextColor="{AppThemeBinding Light={StaticResource Primary}, Dark={StaticResource Black}}" />
+                                <VerticalStackLayout Spacing="25" Padding="30,0">
+                                    <Label Text="{Binding Id}" FontSize="Medium" HorizontalOptions="End" />
+                                    <Label Text="{Binding AcceptTime}" SemanticProperties.HeadingLevel="Level2" FontSize="Medium" HorizontalOptions="Start" />
+                                    <Label Text="{Binding CustomerAddress}" SemanticProperties.HeadingLevel="Level2" FontSize="Medium" HorizontalOptions="Center" />
+                                    <Label Text="{Binding Menu}" SemanticProperties.HeadingLevel="Level2" FontSize="Medium" HorizontalOptions="Center" />
+                                    <Label Text="{Binding CustomerTel}" SemanticProperties.HeadingLevel="Level2" FontSize="Medium" HorizontalOptions="End" />
+                                </VerticalStackLayout>
+                            </HorizontalStackLayout>
+                        </Frame>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+        </HorizontalStackLayout>
+    </RefreshView>
+</ContentPage>

@@ -62,11 +62,14 @@
 			<AutoGen>True</AutoGen>
 			<DependentUpon>AppResources.resx</DependentUpon>
 		</Compile>
-		<Compile Update="Views\ListDetailPage.xaml.cs">
-		  <DependentUpon>ListDetailPage.xaml</DependentUpon>
+		<Compile Update="Views\LoginPage.xaml.cs">
+		  <DependentUpon>LoginPage.xaml</DependentUpon>
 		</Compile>
-		<Compile Update="Views\ListPage.xaml.cs">
-		  <DependentUpon>ListPage.xaml</DependentUpon>
+		<Compile Update="Views\OrderListDetailPage.xaml.cs">
+		  <DependentUpon>OrderListDetailPage.xaml</DependentUpon>
+		</Compile>
+		<Compile Update="Views\OrderListPage.xaml.cs">
+		  <DependentUpon>OrderListPage.xaml</DependentUpon>
 		</Compile>
 		<Compile Update="Views\RatePage.xaml.cs">
 		  <DependentUpon>RatePage.xaml</DependentUpon>
@@ -74,8 +77,8 @@
 		<Compile Update="Views\MapPage.xaml.cs">
 		  <DependentUpon>MapPage.xaml</DependentUpon>
 		</Compile>
-		<Compile Update="Views\OrderPage.xaml.cs">
-		  <DependentUpon>OrderPage.xaml</DependentUpon>
+		<Compile Update="Views\ManagePage.xaml.cs">
+		  <DependentUpon>ManagePage.xaml</DependentUpon>
 		</Compile>
 	</ItemGroup>
 

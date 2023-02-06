@@ -117,7 +117,7 @@ public class UtilityService
                 Thread.Sleep(100);
             }
         }
-        catch (Exception ex)
+        catch
         {
             Thread.Sleep(1000);
         }

@@ -8,7 +8,7 @@ public partial class MapViewModel : BaseViewModel
     public MapViewModel()
     {
         // TODO: Update the default URL
-        Source = "https://www.naver.com";
+        Source = "https://m.blog.naver.com/PostList.naver?blogId=dkssk9092&categoryNo=39&logCode=0&categoryName=%ED%94%8C%EB%9D%BC%EC%9B%8C%EC%BC%80%EC%9D%B4%ED%81%AC#postlist_block";
     }
 
     [RelayCommand]

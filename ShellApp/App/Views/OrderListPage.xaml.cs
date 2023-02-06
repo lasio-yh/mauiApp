@@ -1,20 +1,18 @@
 ﻿namespace ShalomCake.Views;
 
-public partial class ListPage : ContentPage
+public partial class OrderListPage : ContentPage
 {
-    ListViewModel ViewModel;
+    OrderListViewModel ViewModel;
 
-    public ListPage(ListViewModel viewModel)
+    public OrderListPage(OrderListViewModel viewModel)
     {
         InitializeComponent();
-
         BindingContext = ViewModel = viewModel;
     }
 
     protected override async void OnNavigatedTo(NavigatedToEventArgs args)
     {
         base.OnNavigatedTo(args);
-
         await ViewModel.LoadDataAsync();
     }
 }

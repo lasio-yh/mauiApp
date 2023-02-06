@@ -8,37 +8,37 @@
 
     <ShellContent
         Shell.NavBarIsVisible="true"
-        Title="Main"
+        Title="로그인"
         Icon="iconblank.png"
-        ContentTemplate="{DataTemplate views:MainPage}"
-        Route="MainPage" />
+        ContentTemplate="{DataTemplate views:LoginPage}"
+        Route="LoginPage" />
     <ShellContent
         Shell.NavBarIsVisible="true"
-        Title="Rate"
+        Title="주문접수"
+        Icon="iconlistdetail.png"
+        ContentTemplate="{DataTemplate views:OrderListPage}"
+        Route="OrderListPage" />
+    <ShellContent
+        Shell.NavBarIsVisible="true"
+        Title="매장관리"
+        Icon="iconsample.png"
+        ContentTemplate="{DataTemplate views:ManagePage}"
+        Route="ManagePage" />
+    <ShellContent
+        Shell.NavBarIsVisible="False"
+        Title="결제"
         Icon="icondrawing.png"
         ContentTemplate="{DataTemplate views:RatePage}"
         Route="RatePage" />
     <ShellContent
-        Shell.NavBarIsVisible="true"
-        Title="List"
-        Icon="iconlistdetail.png"
-        ContentTemplate="{DataTemplate views:ListPage}"
-        Route="ListPage" />
-    <ShellContent
-        Shell.NavBarIsVisible="true"
-        Title="Order"
-        Icon="iconsample.png"
-        ContentTemplate="{DataTemplate views:OrderPage}"
-        Route="OrderPage" />
-    <ShellContent
-        Shell.NavBarIsVisible="true"
-        Title="Map"
+        Shell.NavBarIsVisible="False"
+        Title="위치"
         Icon="iconwebview.png"
         ContentTemplate="{DataTemplate views:MapPage}"
         Route="MapPage" />
     <ShellContent
         Shell.NavBarIsVisible="true"
-        Title="Localization"
+        Title="도움말"
         Icon="iconlocalization.png"
         ContentTemplate="{DataTemplate views:LocalizationPage}"
         Route="LocalizationPage" />

@@ -1,6 +1,6 @@
 ﻿namespace ShalomCake.ViewModels;
 
-public partial class OrderViewModel : BaseViewModel
+public partial class ManageViewModel : BaseViewModel
 {
     int count = 0;
 

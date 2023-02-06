@@ -1,8 +1,8 @@
 ﻿namespace ShalomCake.Views;
 
-public partial class MainPage : ContentPage
+public partial class ManagePage : ContentPage
 {
-	public MainPage(MainViewModel viewModel)
+	public ManagePage(ManageViewModel viewModel)
 	{
 		InitializeComponent();
 		BindingContext = viewModel;
