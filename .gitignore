@@ -20,10 +20,8 @@ templatesTest/
 .vs/
 .bin/
 .obj/
-.AiApp/bin/
-.AiApp/obj/
-.Foundation/bin/
-.Foundation/obj/
+.OrderProject/bin/
+.OrderProject/obj/
 
 # User-specific files (MonoDevelop/Xamarin Studio)
 *.userprefs
