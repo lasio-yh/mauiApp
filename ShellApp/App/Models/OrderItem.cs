@@ -31,4 +31,12 @@ public class OrderItem
     public string StoreNotice { get; set; }
 
     public string DeliveryNotice { get; set; }
+
+    public int OrderCost { get; set; }
+
+    public int PaymentCost { get; set; }
+
+    public int DiscountCost { get; set; }
+
+    public int DeliveraCost { get; set; }
 }

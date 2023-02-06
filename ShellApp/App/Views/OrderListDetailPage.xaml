@@ -2,30 +2,56 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:vm="clr-namespace:ShalomCake.ViewModels"
+             xmlns:conv="clr-namespace:ShalomCake.Converters"
+             xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
              x:Class="ShalomCake.Views.OrderListDetailPage"
              x:DataType="vm:OrderListDetailViewModel">
-    <ScrollView>
-        <VerticalStackLayout Margin="12">
-            <Image
-                Source="dotnet_bot.png"
-                SemanticProperties.Description="Cute dot net bot waving hi to you!"
-                HeightRequest="200"
-                HorizontalOptions="Center" />
 
-            <Label
-                Text="Hello, World!"
-                SemanticProperties.HeadingLevel="Level1"
-                FontSize="32"
-                HorizontalOptions="Center" />
 
-            <Label
-                Text="Welcome to .NET Multi-platform App UI"
-                SemanticProperties.HeadingLevel="Level2"
-                SemanticProperties.Description="Welcome to dot net Multi platform App U I"
-                FontSize="18"
-                HorizontalOptions="Center" />
-            <Label Text="{Binding Item.Title}" FontSize="Header" />
-            <Label Text="{Binding Item.Description}" FontSize="Default" />
-        </VerticalStackLayout>
-    </ScrollView>
+    <Grid ColumnDefinitions="*,*" RowDefinitions="*,auto">
+        <WebView x:Name="webview" Source="{Binding Source}">
+            <WebView.Behaviors>
+                <toolkit:EventToCommandBehavior
+                    EventName="Navigated"
+                    Command="{Binding WebViewNavigatedCommand}">
+                    <toolkit:EventToCommandBehavior.EventArgsConverter>
+                        <conv:WebNavigatedEventArgsConverter/>
+                    </toolkit:EventToCommandBehavior.EventArgsConverter>
+                </toolkit:EventToCommandBehavior>
+            </WebView.Behaviors>
+        </WebView>
+        <ScrollView Grid.Row="0" Grid.Column="1">
+            <VerticalStackLayout Margin="12"  Spacing="25" Padding="30,0" >
+                <Label Text="주문번호" TextColor="{AppThemeBinding Light={StaticResource Primary}, Dark={StaticResource Black}}" FontSize="Large" HorizontalOptions="Start" />
+                <Label Text="{Binding Item.Id}" FontSize="Medium" HorizontalOptions="Start" />
+                <Label Text="접수시간" TextColor="{AppThemeBinding Light={StaticResource Primary}, Dark={StaticResource Black}}" FontSize="Large" HorizontalOptions="Start" />
+                <Label Text="{Binding Item.AcceptTime}" FontSize="Medium" HorizontalOptions="Start" />
+                <Label Text="고객주소" TextColor="{AppThemeBinding Light={StaticResource Primary}, Dark={StaticResource Black}}" FontSize="Large" HorizontalOptions="Start" />
+                <Label Text="{Binding Item.CustomerAddress}" FontSize="Medium" HorizontalOptions="Start" />
+                <Label Text="고객연락처" TextColor="{AppThemeBinding Light={StaticResource Primary}, Dark={StaticResource Black}}" FontSize="Large" HorizontalOptions="Start" />
+                <Label Text="{Binding Item.CustomerTel}" FontSize="Medium" HorizontalOptions="Start" />
+                <Label Text="고객요청사항" TextColor="{AppThemeBinding Light={StaticResource Primary}, Dark={StaticResource Black}}"  FontSize="Large" HorizontalOptions="Start" />
+                <Label Text="{Binding Item.CustomerNotice}" FontSize="Medium" HorizontalOptions="Start" />
+                <Label Text="메뉴" TextColor="{AppThemeBinding Light={StaticResource Primary}, Dark={StaticResource Black}}" FontSize="Large" HorizontalOptions="Start" />
+                <Label Text="{Binding Item.Menu}"  FontSize="Medium" HorizontalOptions="Start" />
+                <Label Text="주문금액" TextColor="{AppThemeBinding Light={StaticResource Primary}, Dark={StaticResource Black}}" FontSize="Large" HorizontalOptions="Start" />
+                <Label Text="{Binding Item.OrderCost}" FontSize="Medium" HorizontalOptions="Start" />
+                <Label Text="할인금액" TextColor="{AppThemeBinding Light={StaticResource Primary}, Dark={StaticResource Black}}" FontSize="Large" HorizontalOptions="Start" />
+                <Label Text="{Binding Item.DiscountCost}" FontSize="Medium" HorizontalOptions="Start" />
+                <Label Text="결제금액" TextColor="{AppThemeBinding Light={StaticResource Primary}, Dark={StaticResource Black}}" FontSize="Large" HorizontalOptions="Start" />
+                <Label Text="{Binding Item.PaymentCost}" FontSize="Medium" HorizontalOptions="Start" />
+                <Label Text="배송비" TextColor="{AppThemeBinding Light={StaticResource Primary}, Dark={StaticResource Black}}" FontSize="Large" HorizontalOptions="Start" />
+                <Label Text="{Binding Item.DeliveraCost}" FontSize="Medium" HorizontalOptions="Start" />
+            </VerticalStackLayout>
+        </ScrollView>
+        <Button
+            Grid.Row="1"
+            Command="{Binding OkCommand}"
+            Text="수락" />
+        <Button
+            Grid.Row="1"
+            Grid.Column="1"
+            Command="{Binding RefuseCommand}"
+            Text="거절" />
+    </Grid>
 </ContentPage>

@@ -38,5 +38,37 @@
             
         </VerticalStackLayout>
     </ScrollView>
-  
+
+    <!--<Grid RowDefinitions="*,Auto">
+        <WebView x:Name="webview" Source="{Binding Source}">
+            <WebView.Behaviors>
+                <toolkit:EventToCommandBehavior
+                    EventName="Navigated"
+                    Command="{Binding WebViewNavigatedCommand}">
+                    <toolkit:EventToCommandBehavior.EventArgsConverter>
+                        <conv:WebNavigatedEventArgsConverter/>
+                    </toolkit:EventToCommandBehavior.EventArgsConverter>
+                </toolkit:EventToCommandBehavior>
+            </WebView.Behaviors>
+        </WebView>
+        <HorizontalStackLayout Grid.Row="1" HorizontalOptions="Center" Spacing="12">
+            <Button
+                Text="Back"
+                IsEnabled="{Binding Source={x:Reference webview}, Path=CanGoBack}"
+                Command="{Binding NavigateBackCommand}"
+                CommandParameter="{Binding Source={x:Reference webview}}" />
+            <Button
+                Text="Forward"
+                IsEnabled="{Binding Source={x:Reference webview}, Path=CanGoForward}"
+                Command="{Binding NavigateForwardCommand}"
+                CommandParameter="{Binding Source={x:Reference webview}}" />
+            <Button
+                Text="Refresh"
+                Command="{Binding RefreshPageCommand}"
+                CommandParameter="{Binding Source={x:Reference webview}}" />
+            <Button
+                Text="Open in browser"
+                Command="{Binding OpenInBrowserCommand}" />
+        </HorizontalStackLayout>
+    </Grid>-->
 </ContentPage>

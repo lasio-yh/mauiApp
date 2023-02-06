@@ -8,9 +8,22 @@
     <RefreshView IsRefreshing="{Binding IsRefreshing}" Command="{Binding RefreshingCommand}">
         <HorizontalStackLayout >
             <VerticalStackLayout Spacing="25" Padding="30,0" VerticalOptions="Center">
-                <Image Source="dotnet_bot.png" SemanticProperties.Description="Cute dot net bot waving hi to you!" HeightRequest="200" HorizontalOptions="Center" />
-                <Label Text="Hello, World!" SemanticProperties.HeadingLevel="Level1" FontSize="32" HorizontalOptions="Center" />
-                <Label Text="Welcome to .NET Multi-platform App UI" SemanticProperties.HeadingLevel="Level2" SemanticProperties.Description="Welcome to dot net Multi platform App U I"  FontSize="18" HorizontalOptions="Center" />
+                <HorizontalStackLayout>
+                    <Button Text="접수대기" SemanticProperties.HeadingLevel="Level1" FontSize="32" HorizontalOptions="Start" Command="{Binding PauseClickedCommand}" />
+                    <Label Text="5 건" SemanticProperties.HeadingLevel="Level1" FontSize="32" HorizontalOptions="End" />
+                </HorizontalStackLayout>
+                <HorizontalStackLayout>
+                    <Button Text="접수" SemanticProperties.HeadingLevel="Level1" FontSize="32" HorizontalOptions="Start" Command="{Binding AcceptClickedCommand}" />
+                    <Label Text="5 건" SemanticProperties.HeadingLevel="Level1" FontSize="32" HorizontalOptions="End" />
+                </HorizontalStackLayout>
+                <HorizontalStackLayout>
+                    <Button Text="처리 중" SemanticProperties.HeadingLevel="Level1" FontSize="32" HorizontalOptions="Start" Command="{Binding PickupClickedCommand}" />
+                    <Label Text="35 건" SemanticProperties.HeadingLevel="Level1" FontSize="32" HorizontalOptions="End" />
+                </HorizontalStackLayout>
+                <HorizontalStackLayout>
+                    <Button Text="완료" SemanticProperties.HeadingLevel="Level1" FontSize="32" HorizontalOptions="Start" Command="{Binding CompleateClickedCommand}"/>
+                    <Label Text="10 건" SemanticProperties.HeadingLevel="Level1" FontSize="32" HorizontalOptions="End" />
+                </HorizontalStackLayout>
             </VerticalStackLayout>
             <CollectionView ItemsSource="{Binding Items}" RemainingItemsThreshold="10" RemainingItemsThresholdReachedCommand="{Binding LoadMoreCommand}">
                 <CollectionView.ItemTemplate>
@@ -19,14 +32,15 @@
                             <Frame.GestureRecognizers>
                                 <TapGestureRecognizer Command="{Binding Source={RelativeSource AncestorType={x:Type vm:OrderListViewModel}}, Path=GoToDetailsCommand}" CommandParameter="{Binding .}" />
                             </Frame.GestureRecognizers>
-                            <HorizontalStackLayout HorizontalOptions="Fill">
+                            <HorizontalStackLayout Spacing="25" Padding="30,0" HorizontalOptions="Fill">
                                 <Label Text="{Binding Status}" SemanticProperties.HeadingLevel="Level2" FontSize="Large" HorizontalOptions="Center" TextColor="{AppThemeBinding Light={StaticResource Primary}, Dark={StaticResource Black}}" />
                                 <VerticalStackLayout Spacing="25" Padding="30,0">
                                     <Label Text="{Binding Id}" FontSize="Medium" HorizontalOptions="End" />
                                     <Label Text="{Binding AcceptTime}" SemanticProperties.HeadingLevel="Level2" FontSize="Medium" HorizontalOptions="Start" />
-                                    <Label Text="{Binding CustomerAddress}" SemanticProperties.HeadingLevel="Level2" FontSize="Medium" HorizontalOptions="Center" />
-                                    <Label Text="{Binding Menu}" SemanticProperties.HeadingLevel="Level2" FontSize="Medium" HorizontalOptions="Center" />
+                                    <Label Text="{Binding CustomerAddress}" SemanticProperties.HeadingLevel="Level2" FontSize="Medium" HorizontalOptions="Fill" />
+                                    <Label Text="{Binding Menu}" SemanticProperties.HeadingLevel="Level2" FontSize="Medium" HorizontalOptions="Fill" />
                                     <Label Text="{Binding CustomerTel}" SemanticProperties.HeadingLevel="Level2" FontSize="Medium" HorizontalOptions="End" />
+                                    <Button Text="영수증 출력" SemanticProperties.HeadingLevel="Level1" FontSize="32" HorizontalOptions="End" />
                                 </VerticalStackLayout>
                             </HorizontalStackLayout>
                         </Frame>

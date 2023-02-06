@@ -71,12 +71,6 @@
 		<Compile Update="Views\OrderListPage.xaml.cs">
 		  <DependentUpon>OrderListPage.xaml</DependentUpon>
 		</Compile>
-		<Compile Update="Views\RatePage.xaml.cs">
-		  <DependentUpon>RatePage.xaml</DependentUpon>
-		</Compile>
-		<Compile Update="Views\MapPage.xaml.cs">
-		  <DependentUpon>MapPage.xaml</DependentUpon>
-		</Compile>
 		<Compile Update="Views\ManagePage.xaml.cs">
 		  <DependentUpon>ManagePage.xaml</DependentUpon>
 		</Compile>
