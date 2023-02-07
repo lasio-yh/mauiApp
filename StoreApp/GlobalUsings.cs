@@ -1,5 +1,6 @@
 ﻿global using StoreApp.Models;
 global using StoreApp.Services;
+global using StoreApp.Resources.Strings;
 global using CommunityToolkit.Maui;
 global using CommunityToolkit.Maui.Alerts;
 global using CommunityToolkit.Mvvm;

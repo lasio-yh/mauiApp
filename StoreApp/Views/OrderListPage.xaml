@@ -51,26 +51,6 @@
                     </DataTemplate>
                 </CollectionView.ItemTemplate>
             </CollectionView>
-            <ScrollView Grid.Row="0" Grid.Column="1">
-                <VerticalStackLayout Margin="12"  Spacing="25" Padding="30,0" >
-                    <!--<Label Text="가게 코드" TextColor="{AppThemeBinding Light={StaticResource Primary}, Dark={StaticResource Black}}" FontSize="Large" HorizontalOptions="Start" />
-                    <Label Text="{Binding Id}" FontSize="Medium" HorizontalOptions="Start" />
-                    <Label Text="사업자 등록번호" TextColor="{AppThemeBinding Light={StaticResource Primary}, Dark={StaticResource Black}}" FontSize="Large" HorizontalOptions="Start" />
-                    <Editor Text="{Binding StoreNo}" FontSize="Medium" HorizontalOptions="Start" />
-                    <Label Text="대표자명" TextColor="{AppThemeBinding Light={StaticResource Primary}, Dark={StaticResource Black}}" FontSize="Large" HorizontalOptions="Start" />
-                    <Editor Text="{Binding Owner}" FontSize="Medium" HorizontalOptions="Start" />
-                    <Label Text="가게명" TextColor="{AppThemeBinding Light={StaticResource Primary}, Dark={StaticResource Black}}" FontSize="Large" HorizontalOptions="Start" />
-                    <Editor Text="{Binding StoreName}" FontSize="Medium" HorizontalOptions="Start" />
-                    <Label Text="우편번호" TextColor="{AppThemeBinding Light={StaticResource Primary}, Dark={StaticResource Black}}" FontSize="Large" HorizontalOptions="Start" />
-                    <Editor Text="{Binding StoreAddressNo}"  FontSize="Medium" HorizontalOptions="Start" />
-                    <Label Text="가게 주소" TextColor="{AppThemeBinding Light={StaticResource Primary}, Dark={StaticResource Black}}" FontSize="Large" HorizontalOptions="Start" />
-                    <Editor Text="{Binding StoreAddress}" FontSize="Medium" HorizontalOptions="Start" />
-                    <Label Text="가게 연락처1" TextColor="{AppThemeBinding Light={StaticResource Primary}, Dark={StaticResource Black}}" FontSize="Large" HorizontalOptions="Start" />
-                    <Editor Text="{Binding StoreTel1}" FontSize="Medium" HorizontalOptions="Start" />
-                    <Label Text="가게 연락처2" TextColor="{AppThemeBinding Light={StaticResource Primary}, Dark={StaticResource Black}}"  FontSize="Large" HorizontalOptions="Start" />
-                    <Editor Text="{Binding StoreTel2}" FontSize="Medium" HorizontalOptions="Start" />-->
-                </VerticalStackLayout>
-            </ScrollView>
         </HorizontalStackLayout>
     </RefreshView>
 </ContentPage>

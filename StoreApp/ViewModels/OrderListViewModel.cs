@@ -19,7 +19,6 @@ public partial class OrderListViewModel : BaseViewModel
     private async void OnRefreshing()
     {
         IsRefreshing = true;
-
         try
         {
             await LoadDataAsync();
@@ -48,9 +47,6 @@ public partial class OrderListViewModel : BaseViewModel
     [RelayCommand]
     private async void GoToDetails(OrderItem item)
     {
-        if (!item.Status.Equals("접수대기"))
-            return;
-
         await Shell.Current.GoToAsync(nameof(OrderListDetailPage), true, new Dictionary<string, object>
         {
             { "Item", item }
@@ -64,7 +60,7 @@ public partial class OrderListViewModel : BaseViewModel
         Items.Clear();
         foreach (var item in items)
         {
-            if(item.Status.Equals("접수대기"))
+            if(item.Status.Equals(AppResources.ReceiveTitle))
                 Items.Add(item);
         }
     }
@@ -76,7 +72,7 @@ public partial class OrderListViewModel : BaseViewModel
         Items.Clear();
         foreach (var item in items)
         {
-            if (item.Status.Equals("접수"))
+            if (item.Status.Equals(AppResources.AcceptTitle))
                 Items.Add(item);
         }
     }
@@ -88,7 +84,7 @@ public partial class OrderListViewModel : BaseViewModel
         Items.Clear();
         foreach (var item in items)
         {
-            if (item.Status.Equals("처리 중"))
+            if (item.Status.Equals(AppResources.InProcessTitle))
                 Items.Add(item);
         }
     }
@@ -100,7 +96,7 @@ public partial class OrderListViewModel : BaseViewModel
         Items.Clear();
         foreach (var item in items)
         {
-            if (item.Status.Equals("완료"))
+            if (item.Status.Equals(AppResources.CompleateTitle))
                 Items.Add(item);
         }
     }
@@ -108,7 +104,14 @@ public partial class OrderListViewModel : BaseViewModel
     [RelayCommand]
     private async void OnBilgeClicked()
     {
-        //TODO 영수증을 출력합니다.
+        //TODO 영수증을 출력 주입.
+        var text = await dataService.JsonSerializeAsync(Items);
+    }
+
+    [RelayCommand]
+    private async void OnCallClicked()
+    {
+        //TODO 배달 호출 주입.
         var text = await dataService.JsonSerializeAsync(Items);
     }
 }
