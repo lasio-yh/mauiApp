@@ -21,14 +21,14 @@ public static class MauiProgram
 		builder.Services.AddTransient<OrderListDetailViewModel>();
 		builder.Services.AddTransient<OrderListDetailPage>();
 
-        builder.Services.AddSingleton<OrderListViewModel>();
-        builder.Services.AddSingleton<OrderListPage>();
+		builder.Services.AddSingleton<OrderListViewModel>();
+		builder.Services.AddSingleton<OrderListPage>();
 
-        builder.Services.AddTransient<ManageViewModel>();
-        builder.Services.AddTransient<ManagePage>();
+		builder.Services.AddTransient<ManageViewModel>();
+		builder.Services.AddTransient<ManagePage>();
 
-        builder.Services.AddSingleton<LocalizationViewModel>();
-        builder.Services.AddSingleton<LocalizationPage>();
+		builder.Services.AddSingleton<LocalizationViewModel>();
+		builder.Services.AddSingleton<LocalizationPage>();
 
 		return builder.Build();
 	}

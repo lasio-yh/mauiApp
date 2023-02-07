@@ -3,14 +3,17 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:vm="clr-namespace:OrderProject.ViewModels"
              xmlns:m="clr-namespace:OrderProject.Models"
+             xmlns:conv="clr-namespace:OrderProject.Converters"
+             xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
              x:Class="OrderProject.Views.OrderListPage"
              x:DataType="vm:OrderListViewModel">
     <RefreshView IsRefreshing="{Binding IsRefreshing}" Command="{Binding RefreshingCommand}">
-        <HorizontalStackLayout >
+
+        <HorizontalStackLayout FlowDirection="LeftToRight" >
             <VerticalStackLayout Spacing="25" Padding="30,0" VerticalOptions="Center">
                 <HorizontalStackLayout>
                     <Button Text="접수대기" SemanticProperties.HeadingLevel="Level1" FontSize="32" HorizontalOptions="Start" Command="{Binding PauseClickedCommand}" />
-                    <Label Text="5 건" SemanticProperties.HeadingLevel="Level1" FontSize="32" HorizontalOptions="End" />
+                    <Label Text="14 건" SemanticProperties.HeadingLevel="Level1" FontSize="32" HorizontalOptions="End" />
                 </HorizontalStackLayout>
                 <HorizontalStackLayout>
                     <Button Text="접수" SemanticProperties.HeadingLevel="Level1" FontSize="32" HorizontalOptions="Start" Command="{Binding AcceptClickedCommand}" />
@@ -47,6 +50,9 @@
                     </DataTemplate>
                 </CollectionView.ItemTemplate>
             </CollectionView>
+            <VerticalStackLayout Spacing="25" Padding="30,0"  VerticalOptions="Center">
+             
+            </VerticalStackLayout>
         </HorizontalStackLayout>
     </RefreshView>
 </ContentPage>

@@ -10,10 +10,10 @@
 		<ImplicitUsings>enable</ImplicitUsings>
 
 		<!-- Display name -->
-		<ApplicationTitle>AiApp</ApplicationTitle>
+		<ApplicationTitle>OrderApp</ApplicationTitle>
 
 		<!-- App Identifier -->
-		<ApplicationId>com.companyname.AiApp</ApplicationId>
+		<ApplicationId>com.companyname.OrderApp</ApplicationId>
 		<ApplicationIdGuid>30DC5C02-9423-4782-A151-B5949A24B0E4</ApplicationIdGuid>
 
 		<!-- Versions -->
