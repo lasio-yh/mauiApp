@@ -61,11 +61,74 @@ namespace StoreApp.Resources.Strings {
         }
         
         /// <summary>
-        ///   Hello과(와) 유사한 지역화된 문자열을 찾습니다.
+        ///   접수과(와) 유사한 지역화된 문자열을 찾습니다.
         /// </summary>
-        internal static string HelloMessage {
+        internal static string AcceptTitle {
             get {
-                return ResourceManager.GetString("HelloMessage", resourceCulture);
+                return ResourceManager.GetString("AcceptTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   배달 호출과(와) 유사한 지역화된 문자열을 찾습니다.
+        /// </summary>
+        internal static string CallDeliveryTitle {
+            get {
+                return ResourceManager.GetString("CallDeliveryTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   완료과(와) 유사한 지역화된 문자열을 찾습니다.
+        /// </summary>
+        internal static string CompleateTitle {
+            get {
+                return ResourceManager.GetString("CompleateTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   처리 중과(와) 유사한 지역화된 문자열을 찾습니다.
+        /// </summary>
+        internal static string InProcessTitle {
+            get {
+                return ResourceManager.GetString("InProcessTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   주문 수락과(와) 유사한 지역화된 문자열을 찾습니다.
+        /// </summary>
+        internal static string PermisionTitle {
+            get {
+                return ResourceManager.GetString("PermisionTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   영수증 출력과(와) 유사한 지역화된 문자열을 찾습니다.
+        /// </summary>
+        internal static string ReceiptOutputTitle {
+            get {
+                return ResourceManager.GetString("ReceiptOutputTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   접수 대기과(와) 유사한 지역화된 문자열을 찾습니다.
+        /// </summary>
+        internal static string ReceiveTitle {
+            get {
+                return ResourceManager.GetString("ReceiveTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   주문 거절과(와) 유사한 지역화된 문자열을 찾습니다.
+        /// </summary>
+        internal static string RefuseTitle {
+            get {
+                return ResourceManager.GetString("RefuseTitle", resourceCulture);
             }
         }
     }

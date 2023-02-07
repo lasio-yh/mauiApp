@@ -117,7 +117,28 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="HelloMessage" xml:space="preserve">
-    <value>Hello</value>
+  <data name="AcceptTitle" xml:space="preserve">
+    <value>접수</value>
+  </data>
+  <data name="CallDeliveryTitle" xml:space="preserve">
+    <value>배달 호출</value>
+  </data>
+  <data name="CompleateTitle" xml:space="preserve">
+    <value>완료</value>
+  </data>
+  <data name="InProcessTitle" xml:space="preserve">
+    <value>처리 중</value>
+  </data>
+  <data name="PermisionTitle" xml:space="preserve">
+    <value>주문 수락</value>
+  </data>
+  <data name="ReceiptOutputTitle" xml:space="preserve">
+    <value>영수증 출력</value>
+  </data>
+  <data name="ReceiveTitle" xml:space="preserve">
+    <value>접수 대기</value>
+  </data>
+  <data name="RefuseTitle" xml:space="preserve">
+    <value>주문 거절</value>
   </data>
 </root>

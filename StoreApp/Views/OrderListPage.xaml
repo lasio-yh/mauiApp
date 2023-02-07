@@ -1,6 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:rs="clr-namespace:StoreApp.Resources.Strings"
              xmlns:vm="clr-namespace:StoreApp.ViewModels"
              xmlns:m="clr-namespace:StoreApp.Models"
              xmlns:conv="clr-namespace:StoreApp.Converters"
@@ -8,51 +9,68 @@
              x:Class="StoreApp.Views.OrderListPage"
              x:DataType="vm:OrderListViewModel">
     <RefreshView IsRefreshing="{Binding IsRefreshing}" Command="{Binding RefreshingCommand}">
-
-        <HorizontalStackLayout FlowDirection="LeftToRight" >
-            <VerticalStackLayout Spacing="25" Padding="30,0" VerticalOptions="Center">
+        <HorizontalStackLayout>
+            <VerticalStackLayout Spacing="25" Padding="30" VerticalOptions="Center">
                 <HorizontalStackLayout>
-                    <Button Text="접수대기" SemanticProperties.HeadingLevel="Level1" FontSize="32" HorizontalOptions="Start" Command="{Binding PauseClickedCommand}" />
-                    <Label Text="14 건" SemanticProperties.HeadingLevel="Level1" FontSize="32" HorizontalOptions="End" />
+                    <Button Text="{x:Static rs:AppResources.ReceiveTitle}" HorizontalOptions="Start" Command="{Binding PauseClickedCommand}" />
+                    <Label Text="14 건" VerticalOptions="Center" HorizontalOptions="End" />
                 </HorizontalStackLayout>
                 <HorizontalStackLayout>
-                    <Button Text="접수" SemanticProperties.HeadingLevel="Level1" FontSize="32" HorizontalOptions="Start" Command="{Binding AcceptClickedCommand}" />
-                    <Label Text="5 건" SemanticProperties.HeadingLevel="Level1" FontSize="32" HorizontalOptions="End" />
+                    <Button Text="{x:Static rs:AppResources.AcceptTitle}" HorizontalOptions="Start" Command="{Binding AcceptClickedCommand}" />
+                    <Label Text="5 건" VerticalOptions="Center" HorizontalOptions="End" />
                 </HorizontalStackLayout>
                 <HorizontalStackLayout>
-                    <Button Text="처리 중" SemanticProperties.HeadingLevel="Level1" FontSize="32" HorizontalOptions="Start" Command="{Binding PickupClickedCommand}" />
-                    <Label Text="35 건" SemanticProperties.HeadingLevel="Level1" FontSize="32" HorizontalOptions="End" />
+                    <Button Text="{x:Static rs:AppResources.InProcessTitle}" HorizontalOptions="Start" Command="{Binding PickupClickedCommand}" />
+                    <Label Text="35 건" VerticalOptions="Center" HorizontalOptions="End" />
                 </HorizontalStackLayout>
                 <HorizontalStackLayout>
-                    <Button Text="완료" SemanticProperties.HeadingLevel="Level1" FontSize="32" HorizontalOptions="Start" Command="{Binding CompleateClickedCommand}"/>
-                    <Label Text="10 건" SemanticProperties.HeadingLevel="Level1" FontSize="32" HorizontalOptions="End" />
+                    <Button Text="{x:Static rs:AppResources.CompleateTitle}" HorizontalOptions="Start" Command="{Binding CompleateClickedCommand}"/>
+                    <Label Text="10 건" VerticalOptions="Center" HorizontalOptions="End" />
                 </HorizontalStackLayout>
             </VerticalStackLayout>
             <CollectionView ItemsSource="{Binding Items}" RemainingItemsThreshold="10" RemainingItemsThresholdReachedCommand="{Binding LoadMoreCommand}">
                 <CollectionView.ItemTemplate>
                     <DataTemplate x:DataType="m:OrderItem">
-                        <Frame>
+                        <Frame CornerRadius="5" Padding="10,10,10,100" >
                             <Frame.GestureRecognizers>
                                 <TapGestureRecognizer Command="{Binding Source={RelativeSource AncestorType={x:Type vm:OrderListViewModel}}, Path=GoToDetailsCommand}" CommandParameter="{Binding .}" />
                             </Frame.GestureRecognizers>
-                            <HorizontalStackLayout Spacing="25" Padding="30,0" HorizontalOptions="Fill">
-                                <Label Text="{Binding Status}" SemanticProperties.HeadingLevel="Level2" FontSize="Large" HorizontalOptions="Center" TextColor="{AppThemeBinding Light={StaticResource Primary}, Dark={StaticResource Black}}" />
-                                <VerticalStackLayout Spacing="25" Padding="30,0">
-                                    <Label Text="{Binding Id}" FontSize="Medium" HorizontalOptions="End" />
-                                    <Label Text="{Binding AcceptTime}" SemanticProperties.HeadingLevel="Level2" FontSize="Medium" HorizontalOptions="Start" />
-                                    <Label Text="{Binding CustomerAddress}" SemanticProperties.HeadingLevel="Level2" FontSize="Medium" HorizontalOptions="Fill" />
-                                    <Label Text="{Binding Menu}" SemanticProperties.HeadingLevel="Level2" FontSize="Medium" HorizontalOptions="Fill" />
-                                    <Label Text="{Binding CustomerTel}" SemanticProperties.HeadingLevel="Level2" FontSize="Medium" HorizontalOptions="End" />
-                                    <Button Text="영수증 출력" Padding="30,0" SemanticProperties.HeadingLevel="Level1" FontSize="32" HorizontalOptions="End" />
-                                </VerticalStackLayout>
-                            </HorizontalStackLayout>
+                            <VerticalStackLayout Spacing="10">
+                                <HorizontalStackLayout VerticalOptions="Fill" HorizontalOptions="Fill" >
+                                    <Label Text="{Binding Status}" FontSize="Subtitle" HorizontalOptions="StartAndExpand" TextColor="{AppThemeBinding Light={StaticResource Primary}, Dark={StaticResource Black}}" />
+                                    <Label Text="{Binding ReceiveTime}" FontSize="Caption" Margin="20,0,0,0" HorizontalOptions="EndAndExpand" />
+                                </HorizontalStackLayout>
+                                <Label Text="{Binding AcceptTime}" FontSize="Medium" HorizontalOptions="Center" />
+                                <Label Text="{Binding CustomerAddress}" FontSize="Title" HorizontalOptions="Center" />
+                                <HorizontalStackLayout VerticalOptions="Fill" HorizontalOptions="Fill" >
+                                    <Button Text="{x:Static rs:AppResources.CallDeliveryTitle}" FontSize="Small" HorizontalOptions="End" />
+                                    <Button Text="{x:Static rs:AppResources.ReceiptOutputTitle}" FontSize="Small" HorizontalOptions="End" />
+                                </HorizontalStackLayout>
+                            </VerticalStackLayout>
                         </Frame>
                     </DataTemplate>
                 </CollectionView.ItemTemplate>
             </CollectionView>
-            <VerticalStackLayout Spacing="25" Padding="30,0"  VerticalOptions="Center">
-             
-            </VerticalStackLayout>
+            <ScrollView Grid.Row="0" Grid.Column="1">
+                <VerticalStackLayout Margin="12"  Spacing="25" Padding="30,0" >
+                    <!--<Label Text="가게 코드" TextColor="{AppThemeBinding Light={StaticResource Primary}, Dark={StaticResource Black}}" FontSize="Large" HorizontalOptions="Start" />
+                    <Label Text="{Binding Id}" FontSize="Medium" HorizontalOptions="Start" />
+                    <Label Text="사업자 등록번호" TextColor="{AppThemeBinding Light={StaticResource Primary}, Dark={StaticResource Black}}" FontSize="Large" HorizontalOptions="Start" />
+                    <Editor Text="{Binding StoreNo}" FontSize="Medium" HorizontalOptions="Start" />
+                    <Label Text="대표자명" TextColor="{AppThemeBinding Light={StaticResource Primary}, Dark={StaticResource Black}}" FontSize="Large" HorizontalOptions="Start" />
+                    <Editor Text="{Binding Owner}" FontSize="Medium" HorizontalOptions="Start" />
+                    <Label Text="가게명" TextColor="{AppThemeBinding Light={StaticResource Primary}, Dark={StaticResource Black}}" FontSize="Large" HorizontalOptions="Start" />
+                    <Editor Text="{Binding StoreName}" FontSize="Medium" HorizontalOptions="Start" />
+                    <Label Text="우편번호" TextColor="{AppThemeBinding Light={StaticResource Primary}, Dark={StaticResource Black}}" FontSize="Large" HorizontalOptions="Start" />
+                    <Editor Text="{Binding StoreAddressNo}"  FontSize="Medium" HorizontalOptions="Start" />
+                    <Label Text="가게 주소" TextColor="{AppThemeBinding Light={StaticResource Primary}, Dark={StaticResource Black}}" FontSize="Large" HorizontalOptions="Start" />
+                    <Editor Text="{Binding StoreAddress}" FontSize="Medium" HorizontalOptions="Start" />
+                    <Label Text="가게 연락처1" TextColor="{AppThemeBinding Light={StaticResource Primary}, Dark={StaticResource Black}}" FontSize="Large" HorizontalOptions="Start" />
+                    <Editor Text="{Binding StoreTel1}" FontSize="Medium" HorizontalOptions="Start" />
+                    <Label Text="가게 연락처2" TextColor="{AppThemeBinding Light={StaticResource Primary}, Dark={StaticResource Black}}"  FontSize="Large" HorizontalOptions="Start" />
+                    <Editor Text="{Binding StoreTel2}" FontSize="Medium" HorizontalOptions="Start" />-->
+                </VerticalStackLayout>
+            </ScrollView>
         </HorizontalStackLayout>
     </RefreshView>
 </ContentPage>

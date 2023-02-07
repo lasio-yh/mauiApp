@@ -10,11 +10,11 @@ public class OrderItem
 
     public string Status { get; set; }
 
-    public DateTime AcceptTime { get; set; }
+    public DateTime ReceiveTime { get; set; }
 
     public DateTime CompleateTime { get; set; }
 
-    public DateTime PickupTime { get; set; }
+    public DateTime AcceptTime { get; set; }
 
     public string Menu { get; set; }
 
