@@ -1,0 +1,15 @@
+﻿global using StoreApp.Models;
+global using StoreApp.Services;
+global using CommunityToolkit.Maui;
+global using CommunityToolkit.Maui.Alerts;
+global using CommunityToolkit.Mvvm;
+global using CommunityToolkit.Mvvm.ComponentModel;
+global using CommunityToolkit.Mvvm.Input;
+global using StoreApp.ViewModels;
+global using StoreApp.Views;
+global using Microsoft.Maui.Controls;
+global using System.Collections.ObjectModel;
+global using System.Globalization;
+global using System.Text.Json;
+global using System.Threading.Tasks;
+global using System;

@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="StoreApp.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:views="clr-namespace:StoreApp.Views"
+    xmlns:local="clr-namespace:StoreApp"
+    MaximumWidthRequest="100">
+
+    <ShellContent
+        Shell.NavBarIsVisible="true"
+        Title="로그인"
+        Icon="iconblank.png"
+        ContentTemplate="{DataTemplate views:LoginPage}"
+        Route="LoginPage" />
+    <ShellContent
+        Shell.NavBarIsVisible="true"
+        Title="주문현황"
+        Icon="iconlistdetail.png"
+        ContentTemplate="{DataTemplate views:OrderListPage}"
+        Route="OrderListPage" />
+    <ShellContent
+        Shell.NavBarIsVisible="true"
+        Title="매장관리"
+        Icon="iconsample.png"
+        ContentTemplate="{DataTemplate views:ManagePage}"
+        Route="ManagePage" />
+    <ShellContent
+        Shell.NavBarIsVisible="true"
+        Title="도움말"
+        Icon="iconlocalization.png"
+        ContentTemplate="{DataTemplate views:LocalizationPage}"
+        Route="LocalizationPage" />
+</Shell>
