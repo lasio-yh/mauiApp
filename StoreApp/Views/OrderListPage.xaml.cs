@@ -13,6 +13,7 @@ public partial class OrderListPage : ContentPage
     protected override async void OnNavigatedTo(NavigatedToEventArgs args)
     {
         base.OnNavigatedTo(args);
+        this.Title = AppResources.OrderTitle;
         await ViewModel.LoadDataAsync();
     }
 }

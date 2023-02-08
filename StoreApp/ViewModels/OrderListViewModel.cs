@@ -54,7 +54,7 @@ public partial class OrderListViewModel : BaseViewModel
     }
 
     [RelayCommand]
-    private async void OnPauseClicked()
+    private async void OnReceiveClicked()
     {
         var items = await dataService.GetItems();
         Items.Clear();
@@ -78,7 +78,7 @@ public partial class OrderListViewModel : BaseViewModel
     }
 
     [RelayCommand]
-    private async void OnPickupClicked()
+    private async void OnInProcessClicked()
     {
         var items = await dataService.GetItems();
         Items.Clear();
@@ -102,16 +102,16 @@ public partial class OrderListViewModel : BaseViewModel
     }
 
     [RelayCommand]
-    private async void OnBilgeClicked()
+    private void OnBilgeClicked()
     {
         //TODO 영수증을 출력 주입.
-        var text = await dataService.JsonSerializeAsync(Items);
+        //var text = await dataService.JsonSerializeAsync(Items);
     }
 
     [RelayCommand]
-    private async void OnCallClicked()
+    private void OnCallClicked()
     {
         //TODO 배달 호출 주입.
-        var text = await dataService.JsonSerializeAsync(Items);
+        //var text = await dataService.JsonSerializeAsync(Items);
     }
 }

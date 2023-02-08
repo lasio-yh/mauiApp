@@ -7,4 +7,10 @@ public partial class OrderListDetailPage : ContentPage
         InitializeComponent();
         BindingContext = viewModel;
     }
+
+    protected override void OnNavigatedTo(NavigatedToEventArgs args)
+    {
+        base.OnNavigatedTo(args);
+        this.Title = AppResources.OrderInfoTitle;
+    }
 }

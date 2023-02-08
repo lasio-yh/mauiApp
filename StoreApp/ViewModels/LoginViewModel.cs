@@ -9,6 +9,6 @@ public partial class LoginViewModel : BaseViewModel
     [RelayCommand]
     private async void OnLoginClicked()
     {
-        await Shell.Current.GoToAsync("OrderListPage");
+        await Shell.Current.GoToAsync(nameof(OrderListPage));
     }
 }

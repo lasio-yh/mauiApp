@@ -1,78 +1,63 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:res="clr-namespace:StoreApp.Resources.Strings"
              xmlns:vm="clr-namespace:StoreApp.ViewModels"
              xmlns:conv="clr-namespace:StoreApp.Converters"
              xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
              x:Class="StoreApp.Views.OrderListDetailPage"
              x:DataType="vm:OrderListDetailViewModel">
     <ScrollView>
-        <VerticalStackLayout Spacing="15">
-
-            <Label Text="주문 정보" TextColor="{AppThemeBinding Light={StaticResource Primary}, Dark={StaticResource Black}}" FontSize="Subtitle" HorizontalOptions="Start" />
-
+        <VerticalStackLayout Spacing="5">
+            <Label Text="{x:Static res:AppResources.OrderBastTitle}" FontSize="Caption" HorizontalOptions="Start" />
             <HorizontalStackLayout Padding="15,0">
-                <Label Text="주문번호" TextColor="{AppThemeBinding Light={StaticResource Primary}, Dark={StaticResource Black}}" FontSize="Medium" HorizontalOptions="Start" />
-                <Editor Text="{Binding Item.Id}" Margin="15,0" FontSize="Medium" HorizontalOptions="End" />
+                <Label Text="{x:Static res:AppResources.OrderNoTitle}" FontSize="Subtitle" HorizontalOptions="Start" />
+                <Editor Text="{Binding Item.Id}" Margin="15,0" FontSize="Medium" HorizontalOptions="End" AutoSize="TextChanges" />
             </HorizontalStackLayout>
             <HorizontalStackLayout Padding="15,0" >
-                <Label Text="고객 주소" TextColor="{AppThemeBinding Light={StaticResource Primary}, Dark={StaticResource Black}}" FontSize="Medium" HorizontalOptions="Start" />
-                <Editor Text="{Binding Item.CustomerAddress}"  Margin="15,0" FontSize="Medium" HorizontalOptions="End" />
+                <Label Text="{x:Static res:AppResources.CustomerAddressTitle}" FontSize="Subtitle" HorizontalOptions="Start" />
+                <Editor Text="{Binding Item.CustomerAddress}"  Margin="15,0" FontSize="Medium" HorizontalOptions="End" AutoSize="TextChanges" />
             </HorizontalStackLayout>
             <HorizontalStackLayout Padding="15,0" >
-                <Label Text="고객 연락처" TextColor="{AppThemeBinding Light={StaticResource Primary}, Dark={StaticResource Black}}" FontSize="Medium" HorizontalOptions="Start" />
-                <Editor Text="{Binding Item.CustomerTel}" Margin="15,0" FontSize="Medium" HorizontalOptions="End" />
+                <Label Text="{x:Static res:AppResources.CustomerTelTitle}" FontSize="Subtitle" HorizontalOptions="Start" />
+                <Editor Text="{Binding Item.CustomerTel}" Margin="15,0" FontSize="Medium" HorizontalOptions="End" AutoSize="TextChanges" />
             </HorizontalStackLayout>
             <HorizontalStackLayout Padding="15,0" >
-                <Label Text="고객 요청사항" TextColor="{AppThemeBinding Light={StaticResource Primary}, Dark={StaticResource Black}}"  FontSize="Medium" HorizontalOptions="Start" />
-                <Editor Text="{Binding Item.CustomerNotice}" Margin="15,0" FontSize="Medium" HorizontalOptions="End" />
+                <Label Text="{x:Static res:AppResources.CustomerNoticeTitle}" FontSize="Subtitle" HorizontalOptions="Start" />
+                <Editor Text="{Binding Item.CustomerNotice}" Margin="15,0"  FontSize="Medium" HorizontalOptions="End" AutoSize="TextChanges" />
             </HorizontalStackLayout>
             <HorizontalStackLayout Padding="15,0" >
-                <Label Text="배달 요청사항" TextColor="{AppThemeBinding Light={StaticResource Primary}, Dark={StaticResource Black}}" FontSize="Medium" HorizontalOptions="Start" />
-                <Editor Text="{Binding Item.DeliveryNotice}" Margin="15,0" FontSize="Medium" HorizontalOptions="End" />
+                <Label Text="{x:Static res:AppResources.DeliveryNoticeTitle}" FontSize="Subtitle" HorizontalOptions="Start" />
+                <Editor Text="{Binding Item.DeliveryNotice}" Margin="15,0" FontSize="Medium" HorizontalOptions="End" AutoSize="TextChanges" />
             </HorizontalStackLayout>
             <HorizontalStackLayout Padding="15,0" >
-                <Label Text="가게 요청사항" TextColor="{AppThemeBinding Light={StaticResource Primary}, Dark={StaticResource Black}}" FontSize="Medium" HorizontalOptions="Start" />
-                <Editor Text="{Binding Item.StoreNotice}" Margin="15,0"  FontSize="Medium" HorizontalOptions="End" />
+                <Label Text="{x:Static res:AppResources.StoreNoticeTitle}" FontSize="Subtitle" HorizontalOptions="Start" />
+                <Editor Text="{Binding Item.StoreNotice}" Margin="15,0" FontSize="Medium" HorizontalOptions="End" AutoSize="TextChanges" />
             </HorizontalStackLayout>
             <HorizontalStackLayout Padding="15,0" >
-                <Label Text="메뉴" TextColor="{AppThemeBinding Light={StaticResource Primary}, Dark={StaticResource Black}}" FontSize="Medium" HorizontalOptions="Start" />
-                <Editor Text="{Binding Item.Menu}" Margin="15,0" FontSize="Medium" HorizontalOptions="End" />
+                <Label Text="{x:Static res:AppResources.OrderMenu}" FontSize="Subtitle" HorizontalOptions="Start" />
+                <Editor Text="{Binding Item.Menu}" Margin="15,0" FontSize="Medium" HorizontalOptions="End" AutoSize="TextChanges" />
             </HorizontalStackLayout>
-
-            <Label Text="결제 정보" TextColor="{AppThemeBinding Light={StaticResource Primary}, Dark={StaticResource Black}}" FontSize="Subtitle" HorizontalOptions="Start" />
-
+            <Label Text="{x:Static res:AppResources.PaymentInfoTitle}" FontSize="Caption" HorizontalOptions="Start" />
             <HorizontalStackLayout Padding="15,0" >
-                <Label Text="총 주문금액" TextColor="{AppThemeBinding Light={StaticResource Primary}, Dark={StaticResource Black}}" FontSize="Medium" HorizontalOptions="Start" />
-                <Editor Text="{Binding Item.OrderCost}" Margin="15,0" FontSize="Medium" HorizontalOptions="End" />
-                <Stepper>
-
-                </Stepper>
+                <Label Text="{x:Static res:AppResources.TotalOrderCost}" FontSize="Subtitle" HorizontalOptions="Start" />
+                <Editor Text="{Binding Item.OrderCost}" Margin="15,0" FontSize="Medium" HorizontalOptions="End" AutoSize="TextChanges" />
             </HorizontalStackLayout>
             <HorizontalStackLayout Padding="15,0" >
-                <Label Text="할인금액" TextColor="{AppThemeBinding Light={StaticResource Primary}, Dark={StaticResource Black}}" FontSize="Medium" HorizontalOptions="Start" />
-                <Editor Text="{Binding Item.DiscountCost}" Margin="15,0" FontSize="Medium" HorizontalOptions="End" />
-                <Stepper>
-
-                </Stepper>
+                <Label Text="{x:Static res:AppResources.DiscountCost}" FontSize="Subtitle" HorizontalOptions="Start" />
+                <Editor Text="{Binding Item.DiscountCost}" Margin="15,0" FontSize="Medium" HorizontalOptions="End" AutoSize="TextChanges" />
             </HorizontalStackLayout>
             <HorizontalStackLayout Padding="15,0" >
-                <Label Text="배달비" TextColor="{AppThemeBinding Light={StaticResource Primary}, Dark={StaticResource Black}}" FontSize="Medium" HorizontalOptions="Start" />
-                <Editor Text="{Binding Item.DeliveraCost}" Margin="15,0" FontSize="Medium" HorizontalOptions="End" />
-                <Stepper>
-
-                </Stepper>
+                <Label Text="{x:Static res:AppResources.DeliveryCost}" FontSize="Subtitle" HorizontalOptions="Start" />
+                <Editor Text="{Binding Item.DeliveraCost}" Margin="15,0" FontSize="Medium" HorizontalOptions="End" AutoSize="TextChanges" />
             </HorizontalStackLayout>
             <HorizontalStackLayout Padding="15,0" >
-                <Label Text="결제금액" TextColor="{AppThemeBinding Light={StaticResource Primary}, Dark={StaticResource Black}}" FontSize="Medium" HorizontalOptions="Start" />
-                <Editor Text="{Binding Item.PaymentCost}" Margin="15,0" FontSize="Medium" HorizontalOptions="End" />
-                <Stepper>
-
-                </Stepper>
+                <Label Text="{x:Static res:AppResources.TotalPaymentCost}" FontSize="Subtitle" HorizontalOptions="Start" />
+                <Editor Text="{Binding Item.PaymentCost}" Margin="15,0"  FontSize="Medium" HorizontalOptions="End" AutoSize="TextChanges" />
             </HorizontalStackLayout>
-            <HorizontalStackLayout>
-                <Button Padding="30,30" Command="{Binding OkCommand}" Text="주문 수락" FontSize="Large" />
-                <Button Padding="30,30" Command="{Binding RefuseCommand}" Text="주문 거절" FontSize="Large" />
+            <HorizontalStackLayout HorizontalOptions="Center">
+                <Button Command="{Binding OkCommand}" Text="{x:Static res:AppResources.OrderAcceptTitle}" FontSize="Large" Margin="10" />
+                <Button Command="{Binding RefuseCommand}" Text="{x:Static res:AppResources.OrderRefuseTitle}" FontSize="Large" Margin="10" />
             </HorizontalStackLayout>
         </VerticalStackLayout>
     </ScrollView>

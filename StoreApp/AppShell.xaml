@@ -3,31 +3,32 @@
     x:Class="StoreApp.AppShell"
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:res="clr-namespace:StoreApp.Resources.Strings"
     xmlns:views="clr-namespace:StoreApp.Views"
     xmlns:local="clr-namespace:StoreApp"
     MaximumWidthRequest="100">
 
     <ShellContent
         Shell.NavBarIsVisible="true"
-        Title="로그인"
+        Title="{x:Static res:AppResources.LoginTitle}"
         Icon="iconblank.png"
         ContentTemplate="{DataTemplate views:LoginPage}"
         Route="LoginPage" />
     <ShellContent
         Shell.NavBarIsVisible="true"
-        Title="주문현황"
+        Title="{x:Static res:AppResources.OrderTitle}"
         Icon="iconlistdetail.png"
         ContentTemplate="{DataTemplate views:OrderListPage}"
         Route="OrderListPage" />
     <ShellContent
         Shell.NavBarIsVisible="true"
-        Title="매장관리"
+        Title="{x:Static res:AppResources.ManageTitle}"
         Icon="iconsample.png"
         ContentTemplate="{DataTemplate views:ManagePage}"
         Route="ManagePage" />
     <ShellContent
         Shell.NavBarIsVisible="true"
-        Title="도움말"
+        Title="{x:Static res:AppResources.LocalizationTitle}"
         Icon="iconlocalization.png"
         ContentTemplate="{DataTemplate views:LocalizationPage}"
         Route="LocalizationPage" />

@@ -10,10 +10,10 @@
 		<ImplicitUsings>enable</ImplicitUsings>
 
 		<!-- Display name -->
-		<ApplicationTitle>OrderApp</ApplicationTitle>
+		<ApplicationTitle>StoreApp</ApplicationTitle>
 
 		<!-- App Identifier -->
-		<ApplicationId>com.companyname.OrderApp</ApplicationId>
+		<ApplicationId>com.companyname.StoreApp</ApplicationId>
 		<ApplicationIdGuid>30DC5C02-9423-4782-A151-B5949A24B0E4</ApplicationIdGuid>
 
 		<!-- Versions -->
@@ -96,205 +96,247 @@
 	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|net6.0-android|AnyCPU'">
 	  <ApplicationTitle>StoreApp</ApplicationTitle>
 	  <ApplicationId>com.companyname.StoreApp</ApplicationId>
+    <ApplicationVersion>1</ApplicationVersion>
 	</PropertyGroup>
 
 	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|net6.0-android|AnyCPU'">
 	  <ApplicationTitle>StoreApp</ApplicationTitle>
 	  <ApplicationId>com.companyname.StoreApp</ApplicationId>
+    <ApplicationVersion>1</ApplicationVersion>
 	</PropertyGroup>
 
 	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|net6.0-android|ARM64'">
 	  <ApplicationTitle>StoreApp</ApplicationTitle>
 	  <ApplicationId>com.companyname.StoreApp</ApplicationId>
+    <ApplicationVersion>1</ApplicationVersion>
 	</PropertyGroup>
 
 	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|net6.0-android|ARM64'">
 	  <ApplicationTitle>StoreApp</ApplicationTitle>
 	  <ApplicationId>com.companyname.StoreApp</ApplicationId>
+    <ApplicationVersion>1</ApplicationVersion>
 	</PropertyGroup>
 
 	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|net6.0-android|x86'">
 	  <ApplicationTitle>StoreApp</ApplicationTitle>
 	  <ApplicationId>com.companyname.StoreApp</ApplicationId>
+    <ApplicationVersion>1</ApplicationVersion>
 	</PropertyGroup>
 
 	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|net6.0-android|x86'">
 	  <ApplicationTitle>StoreApp</ApplicationTitle>
 	  <ApplicationId>com.companyname.StoreApp</ApplicationId>
+    <ApplicationVersion>1</ApplicationVersion>
 	</PropertyGroup>
 
 	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|net6.0-ios|AnyCPU'">
 	  <ApplicationTitle>StoreApp</ApplicationTitle>
 	  <ApplicationId>com.companyname.StoreApp</ApplicationId>
+    <ApplicationVersion>1</ApplicationVersion>
 	</PropertyGroup>
 
 	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|net6.0-ios|AnyCPU'">
 	  <ApplicationTitle>StoreApp</ApplicationTitle>
 	  <ApplicationId>com.companyname.StoreApp</ApplicationId>
+    <ApplicationVersion>1</ApplicationVersion>
 	</PropertyGroup>
 
 	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|net6.0-ios|ARM64'">
 	  <ApplicationTitle>StoreApp</ApplicationTitle>
 	  <ApplicationId>com.companyname.StoreApp</ApplicationId>
+    <ApplicationVersion>1</ApplicationVersion>
 	</PropertyGroup>
 
 	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|net6.0-ios|ARM64'">
 	  <ApplicationTitle>StoreApp</ApplicationTitle>
 	  <ApplicationId>com.companyname.StoreApp</ApplicationId>
+    <ApplicationVersion>1</ApplicationVersion>
 	</PropertyGroup>
 
 	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|net6.0-ios|x86'">
 	  <ApplicationTitle>StoreApp</ApplicationTitle>
 	  <ApplicationId>com.companyname.StoreApp</ApplicationId>
+    <ApplicationVersion>1</ApplicationVersion>
 	</PropertyGroup>
 
 	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|net6.0-ios|x86'">
 	  <ApplicationTitle>StoreApp</ApplicationTitle>
 	  <ApplicationId>com.companyname.StoreApp</ApplicationId>
+    <ApplicationVersion>1</ApplicationVersion>
 	</PropertyGroup>
 
 	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|net6.0-maccatalyst|AnyCPU'">
 	  <ApplicationTitle>StoreApp</ApplicationTitle>
 	  <ApplicationId>com.companyname.StoreApp</ApplicationId>
+    <ApplicationVersion>1</ApplicationVersion>
 	</PropertyGroup>
 
 	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|net6.0-maccatalyst|AnyCPU'">
 	  <ApplicationTitle>StoreApp</ApplicationTitle>
 	  <ApplicationId>com.companyname.StoreApp</ApplicationId>
+    <ApplicationVersion>1</ApplicationVersion>
 	</PropertyGroup>
 
 	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|net6.0-maccatalyst|ARM64'">
 	  <ApplicationTitle>StoreApp</ApplicationTitle>
 	  <ApplicationId>com.companyname.StoreApp</ApplicationId>
+    <ApplicationVersion>1</ApplicationVersion>
 	</PropertyGroup>
 
 	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|net6.0-maccatalyst|ARM64'">
 	  <ApplicationTitle>StoreApp</ApplicationTitle>
 	  <ApplicationId>com.companyname.StoreApp</ApplicationId>
+    <ApplicationVersion>1</ApplicationVersion>
 	</PropertyGroup>
 
 	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|net6.0-maccatalyst|x86'">
 	  <ApplicationTitle>StoreApp</ApplicationTitle>
 	  <ApplicationId>com.companyname.StoreApp</ApplicationId>
+    <ApplicationVersion>1</ApplicationVersion>
 	</PropertyGroup>
 
 	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|net6.0-maccatalyst|x86'">
 	  <ApplicationTitle>StoreApp</ApplicationTitle>
 	  <ApplicationId>com.companyname.StoreApp</ApplicationId>
+    <ApplicationVersion>1</ApplicationVersion>
 	</PropertyGroup>
 
 	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|net6.0-windows10.0.19041.0|AnyCPU'">
 	  <ApplicationTitle>StoreApp</ApplicationTitle>
 	  <ApplicationId>com.companyname.StoreApp</ApplicationId>
+    <ApplicationVersion>1</ApplicationVersion>
 	</PropertyGroup>
 
 	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|net6.0-windows10.0.19041.0|AnyCPU'">
 	  <ApplicationTitle>StoreApp</ApplicationTitle>
 	  <ApplicationId>com.companyname.StoreApp</ApplicationId>
+    <ApplicationVersion>1</ApplicationVersion>
 	</PropertyGroup>
 
 	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|net6.0-windows10.0.19041.0|ARM64'">
 	  <ApplicationTitle>StoreApp</ApplicationTitle>
 	  <ApplicationId>com.companyname.StoreApp</ApplicationId>
+    <ApplicationVersion>1</ApplicationVersion>
 	</PropertyGroup>
 
 	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|net6.0-windows10.0.19041.0|ARM64'">
 	  <ApplicationTitle>StoreApp</ApplicationTitle>
 	  <ApplicationId>com.companyname.StoreApp</ApplicationId>
+    <ApplicationVersion>1</ApplicationVersion>
 	</PropertyGroup>
 
 	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|net6.0-windows10.0.19041.0|x86'">
 	  <ApplicationTitle>StoreApp</ApplicationTitle>
 	  <ApplicationId>com.companyname.StoreApp</ApplicationId>
+    <ApplicationVersion>1</ApplicationVersion>
 	</PropertyGroup>
 
 	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|net6.0-windows10.0.19041.0|x86'">
 	  <ApplicationTitle>StoreApp</ApplicationTitle>
 	  <ApplicationId>com.companyname.StoreApp</ApplicationId>
+    <ApplicationVersion>1</ApplicationVersion>
 	</PropertyGroup>
 
 	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|net7.0-ios|AnyCPU'">
 	  <ApplicationTitle>StoreApp</ApplicationTitle>
 	  <ApplicationId>com.companyname.StoreApp</ApplicationId>
+    <ApplicationVersion>1</ApplicationVersion>
 	</PropertyGroup>
 
 	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|net7.0-ios|AnyCPU'">
 	  <ApplicationTitle>StoreApp</ApplicationTitle>
 	  <ApplicationId>com.companyname.StoreApp</ApplicationId>
+    <ApplicationVersion>1</ApplicationVersion>
 	</PropertyGroup>
 
 	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|net7.0-ios|ARM64'">
 	  <ApplicationTitle>StoreApp</ApplicationTitle>
 	  <ApplicationId>com.companyname.StoreApp</ApplicationId>
+    <ApplicationVersion>1</ApplicationVersion>
 	</PropertyGroup>
 
 	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|net7.0-ios|ARM64'">
 	  <ApplicationTitle>StoreApp</ApplicationTitle>
 	  <ApplicationId>com.companyname.StoreApp</ApplicationId>
+    <ApplicationVersion>1</ApplicationVersion>
 	</PropertyGroup>
 
 	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|net7.0-ios|x86'">
 	  <ApplicationTitle>StoreApp</ApplicationTitle>
 	  <ApplicationId>com.companyname.StoreApp</ApplicationId>
+    <ApplicationVersion>1</ApplicationVersion>
 	</PropertyGroup>
 
 	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|net7.0-ios|x86'">
 	  <ApplicationTitle>StoreApp</ApplicationTitle>
 	  <ApplicationId>com.companyname.StoreApp</ApplicationId>
+    <ApplicationVersion>1</ApplicationVersion>
 	</PropertyGroup>
 
 	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|net7.0-android|AnyCPU'">
 	  <ApplicationTitle>StoreApp</ApplicationTitle>
 	  <ApplicationId>com.companyname.StoreApp</ApplicationId>
+    <ApplicationVersion>1</ApplicationVersion>
 	</PropertyGroup>
 
 	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|net7.0-android|AnyCPU'">
 	  <ApplicationTitle>StoreApp</ApplicationTitle>
 	  <ApplicationId>com.companyname.StoreApp</ApplicationId>
+    <ApplicationVersion>1</ApplicationVersion>
 	</PropertyGroup>
 
 	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|net7.0-android|ARM64'">
 	  <ApplicationTitle>StoreApp</ApplicationTitle>
 	  <ApplicationId>com.companyname.StoreApp</ApplicationId>
+    <ApplicationVersion>1</ApplicationVersion>
 	</PropertyGroup>
 
 	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|net7.0-android|ARM64'">
 	  <ApplicationTitle>StoreApp</ApplicationTitle>
 	  <ApplicationId>com.companyname.StoreApp</ApplicationId>
+    <ApplicationVersion>1</ApplicationVersion>
 	</PropertyGroup>
 
 	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|net7.0-android|x86'">
 	  <ApplicationTitle>StoreApp</ApplicationTitle>
 	  <ApplicationId>com.companyname.StoreApp</ApplicationId>
+    <ApplicationVersion>1</ApplicationVersion>
 	</PropertyGroup>
 
 	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|net7.0-android|x86'">
 	  <ApplicationTitle>StoreApp</ApplicationTitle>
 	  <ApplicationId>com.companyname.StoreApp</ApplicationId>
+    <ApplicationVersion>1</ApplicationVersion>
 	</PropertyGroup>
 
 	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|net7.0-windows10.0.19041.0|AnyCPU'">
 	  <ApplicationTitle>StoreApp</ApplicationTitle>
+    <ApplicationVersion>1</ApplicationVersion>
 	</PropertyGroup>
 
 	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|net7.0-windows10.0.19041.0|AnyCPU'">
 	  <ApplicationTitle>StoreApp</ApplicationTitle>
+    <ApplicationVersion>1</ApplicationVersion>
 	</PropertyGroup>
 
 	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|net7.0-windows10.0.19041.0|ARM64'">
 	  <ApplicationTitle>StoreApp</ApplicationTitle>
+    <ApplicationVersion>1</ApplicationVersion>
 	</PropertyGroup>
 
 	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|net7.0-windows10.0.19041.0|ARM64'">
 	  <ApplicationTitle>StoreApp</ApplicationTitle>
+    <ApplicationVersion>1</ApplicationVersion>
 	</PropertyGroup>
 
 	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|net7.0-windows10.0.19041.0|x86'">
 	  <ApplicationTitle>StoreApp</ApplicationTitle>
+    <ApplicationVersion>1</ApplicationVersion>
 	</PropertyGroup>
 
 	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|net7.0-windows10.0.19041.0|x86'">
 	  <ApplicationTitle>StoreApp</ApplicationTitle>
+    <ApplicationVersion>1</ApplicationVersion>
 	</PropertyGroup>
 
 </Project>

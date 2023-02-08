@@ -79,11 +79,74 @@ namespace StoreApp.Resources.Strings {
         }
         
         /// <summary>
+        ///   주문 취소과(와) 유사한 지역화된 문자열을 찾습니다.
+        /// </summary>
+        internal static string CancleTitle {
+            get {
+                return ResourceManager.GetString("CancleTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   완료과(와) 유사한 지역화된 문자열을 찾습니다.
         /// </summary>
         internal static string CompleateTitle {
             get {
                 return ResourceManager.GetString("CompleateTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   배송지과(와) 유사한 지역화된 문자열을 찾습니다.
+        /// </summary>
+        internal static string CustomerAddressTitle {
+            get {
+                return ResourceManager.GetString("CustomerAddressTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   고객 요청사항과(와) 유사한 지역화된 문자열을 찾습니다.
+        /// </summary>
+        internal static string CustomerNoticeTitle {
+            get {
+                return ResourceManager.GetString("CustomerNoticeTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   고객 연락처과(와) 유사한 지역화된 문자열을 찾습니다.
+        /// </summary>
+        internal static string CustomerTelTitle {
+            get {
+                return ResourceManager.GetString("CustomerTelTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   배달비과(와) 유사한 지역화된 문자열을 찾습니다.
+        /// </summary>
+        internal static string DeliveryCost {
+            get {
+                return ResourceManager.GetString("DeliveryCost", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   배달 요청사항과(와) 유사한 지역화된 문자열을 찾습니다.
+        /// </summary>
+        internal static string DeliveryNoticeTitle {
+            get {
+                return ResourceManager.GetString("DeliveryNoticeTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   할인 금액과(와) 유사한 지역화된 문자열을 찾습니다.
+        /// </summary>
+        internal static string DiscountCost {
+            get {
+                return ResourceManager.GetString("DiscountCost", resourceCulture);
             }
         }
         
@@ -97,11 +160,101 @@ namespace StoreApp.Resources.Strings {
         }
         
         /// <summary>
+        ///   도움말과(와) 유사한 지역화된 문자열을 찾습니다.
+        /// </summary>
+        internal static string LocalizationTitle {
+            get {
+                return ResourceManager.GetString("LocalizationTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   로그인과(와) 유사한 지역화된 문자열을 찾습니다.
+        /// </summary>
+        internal static string LoginTitle {
+            get {
+                return ResourceManager.GetString("LoginTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   매장관리과(와) 유사한 지역화된 문자열을 찾습니다.
+        /// </summary>
+        internal static string ManageTitle {
+            get {
+                return ResourceManager.GetString("ManageTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   주문 수락과(와) 유사한 지역화된 문자열을 찾습니다.
         /// </summary>
-        internal static string PermisionTitle {
+        internal static string OrderAcceptTitle {
             get {
-                return ResourceManager.GetString("PermisionTitle", resourceCulture);
+                return ResourceManager.GetString("OrderAcceptTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   기본 정보과(와) 유사한 지역화된 문자열을 찾습니다.
+        /// </summary>
+        internal static string OrderBastTitle {
+            get {
+                return ResourceManager.GetString("OrderBastTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   주문 내역과(와) 유사한 지역화된 문자열을 찾습니다.
+        /// </summary>
+        internal static string OrderInfoTitle {
+            get {
+                return ResourceManager.GetString("OrderInfoTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   메뉴과(와) 유사한 지역화된 문자열을 찾습니다.
+        /// </summary>
+        internal static string OrderMenu {
+            get {
+                return ResourceManager.GetString("OrderMenu", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   오더번호과(와) 유사한 지역화된 문자열을 찾습니다.
+        /// </summary>
+        internal static string OrderNoTitle {
+            get {
+                return ResourceManager.GetString("OrderNoTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   주문 거절과(와) 유사한 지역화된 문자열을 찾습니다.
+        /// </summary>
+        internal static string OrderRefuseTitle {
+            get {
+                return ResourceManager.GetString("OrderRefuseTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   주문목록과(와) 유사한 지역화된 문자열을 찾습니다.
+        /// </summary>
+        internal static string OrderTitle {
+            get {
+                return ResourceManager.GetString("OrderTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   결제 정보과(와) 유사한 지역화된 문자열을 찾습니다.
+        /// </summary>
+        internal static string PaymentInfoTitle {
+            get {
+                return ResourceManager.GetString("PaymentInfoTitle", resourceCulture);
             }
         }
         
@@ -124,11 +277,29 @@ namespace StoreApp.Resources.Strings {
         }
         
         /// <summary>
-        ///   주문 거절과(와) 유사한 지역화된 문자열을 찾습니다.
+        ///   가게 요청사항과(와) 유사한 지역화된 문자열을 찾습니다.
         /// </summary>
-        internal static string RefuseTitle {
+        internal static string StoreNoticeTitle {
             get {
-                return ResourceManager.GetString("RefuseTitle", resourceCulture);
+                return ResourceManager.GetString("StoreNoticeTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   총 주문 금액과(와) 유사한 지역화된 문자열을 찾습니다.
+        /// </summary>
+        internal static string TotalOrderCost {
+            get {
+                return ResourceManager.GetString("TotalOrderCost", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   총 결제 금액과(와) 유사한 지역화된 문자열을 찾습니다.
+        /// </summary>
+        internal static string TotalPaymentCost {
+            get {
+                return ResourceManager.GetString("TotalPaymentCost", resourceCulture);
             }
         }
     }

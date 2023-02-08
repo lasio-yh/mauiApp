@@ -8,7 +8,7 @@ public class OrderService
         await Task.Delay(1000); // Artifical delay to give the impression of work
         var random = new Random().Next();
         var result = new List<OrderItem>();
-        for (var i = 0; i < 5; i++)
+        for (var i = 0; i < 2; i++)
         {
             result.Add(new OrderItem
             {
@@ -33,7 +33,7 @@ public class OrderService
                 Description = ""
             });
         }
-        for (var i = 0; i < 17; i++)
+        for (var i = 0; i < 2; i++)
         {
             result.Add(new OrderItem
             {
@@ -58,7 +58,7 @@ public class OrderService
                 Description = ""
             });
         }
-        for (var i = 0; i < 28; i++)
+        for (var i = 0; i < 2; i++)
         {
             result.Add(new OrderItem
             {
@@ -83,7 +83,7 @@ public class OrderService
                 Description = ""
             });
         }
-        for (var i = 0; i < 55; i++)
+        for (var i = 0; i < 2; i++)
         {
             result.Add(new OrderItem
             {
