@@ -6,7 +6,6 @@ Windows, Android, IOS, Mac 통합 플랫폼 입니다.
 
 # StoreApp
 주문접수 프로그램
-![image](https://user-images.githubusercontent.com/25007664/217461229-2dce538a-eb0e-454c-b97c-acfe7ccb95a6.png)
 
 PC 클라이언트
 1. 주문 목록에서 접수 상태인 주문을 선택합니다.
