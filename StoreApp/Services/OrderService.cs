@@ -12,9 +12,9 @@ public class OrderService
         {
             result.Add(new OrderItem
             {
-                Title = $"OrderID {random}-{5 - i}",
-                Id = random,
-                ReceiveTime = DateTime.Now,
+                Title = $"OrderID {random}-{i}",
+                Id = $"{random}",
+                ReceiveTime = $"{DateTime.Now.ToString("yyyy년 MM월 dd일 HH시 mm분")}",
                 Status = "접수 대기",
                 CustomerAddress = $"경기도 시흥시 월곶중앙로 58번길 블루밍 더 마크 102동 1002호",
                 CustomerNotice = $"맵지 않게 해주세요.",
@@ -24,87 +24,12 @@ public class OrderService
                 StoreNotice = $"일회용 용기 빼주세요.",
                 DeliveryNotice = $"조심히 와주세요.",
                 Menu = $"페퍼로니 피자 라지 1ea, 제로콜라 1.25L, 까르보나라 파스타, 포테이토 피자 1EA",
-                CompleateTime = DateTime.Now,
-                AcceptTime = DateTime.Now,
-                DeliveraCost = 3000,
-                DiscountCost = 4000,
-                OrderCost = 20000,
-                PaymentCost = 17000,
-                Description = ""
-            });
-        }
-        for (var i = 0; i < 2; i++)
-        {
-            result.Add(new OrderItem
-            {
-                Title = $"OrderID {random}-{17 - i}",
-                Id = random,
-                ReceiveTime = DateTime.Now,
-                Status = "접수",
-                CustomerAddress = $"경기도 시흥시 월곶중앙로 58번길 블루밍 더 마크 102동 1002호",
-                CustomerNotice = $"맵지 않게 해주세요.",
-                CustomerTel = $"000-0000-0000",
-                StoreAddress = $"",
-                StoreTel = $"000-0000-0000",
-                StoreNotice = $"일회용 용기 빼주세요.",
-                DeliveryNotice = $"조심히 와주세요.",
-                Menu = $"굽네치킨 2마리, 치킨 무 2세트",
-                CompleateTime = DateTime.Now,
-                AcceptTime = DateTime.Now,
-                DeliveraCost = 3000,
-                DiscountCost = 4000,
-                OrderCost = 20000,
-                PaymentCost = 17000,
-                Description = ""
-            });
-        }
-        for (var i = 0; i < 2; i++)
-        {
-            result.Add(new OrderItem
-            {
-                Title = $"OrderID {random}-{28 - i}",
-                Id = random,
-                ReceiveTime = DateTime.Now,
-                Status = "처리 중",
-                CustomerAddress = $"경기도 시흥시 월곶중앙로 58번길 블루밍 더 마크 102동 1002호",
-                CustomerNotice = $"맵지 않게 해주세요.",
-                CustomerTel = $"000-0000-0000",
-                StoreAddress = $"",
-                StoreTel = $"000-0000-0000",
-                StoreNotice = $"일회용 용기 빼주세요.",
-                DeliveryNotice = $"조심히 와주세요.",
-                Menu = $"페퍼로니 피자 라지 1ea, 제로콜라 1.25L, 까르보나라 파스타, 포테이토 피자 1EA",
-                CompleateTime = DateTime.Now,
-                AcceptTime = DateTime.Now,
-                DeliveraCost = 3000,
-                DiscountCost = 4000,
-                OrderCost = 20000,
-                PaymentCost = 17000,
-                Description = ""
-            });
-        }
-        for (var i = 0; i < 2; i++)
-        {
-            result.Add(new OrderItem
-            {
-                Title = $"OrderID {random}-{55 - i}",
-                Id = random,
-                ReceiveTime = DateTime.Now,
-                Status = "완료",
-                CustomerAddress = $"경기도 시흥시 월곶중앙로 58번길 블루밍 더 마크 102동 1002호",
-                CustomerNotice = $"맵지 않게 해주세요.",
-                CustomerTel = $"000-0000-0000",
-                StoreAddress = $"",
-                StoreTel = $"000-0000-0000",
-                StoreNotice = $"일회용 용기 빼주세요.",
-                DeliveryNotice = $"조심히 와주세요.",
-                Menu = $"페퍼로니 피자 라지 1ea, 제로콜라 1.25L, 까르보나라 파스타, 포테이토 피자 1EA",
-                CompleateTime = DateTime.Now,
-                AcceptTime = DateTime.Now,
-                DeliveraCost = 3000,
-                DiscountCost = 4000,
-                OrderCost = 20000,
-                PaymentCost = 17000,
+                CompleateTime = $"{DateTime.Now.ToString("yyyy년 MM월 dd일 HH시 mm분")}",
+                AcceptTime = $"{DateTime.Now.ToString("yyyy년 MM월 dd일 HH시 mm분")}",
+                DeliveraCost = $"1000 원",
+                DiscountCost = $"1000 원",
+                OrderCost = $"총 1000 원",
+                PaymentCost = $"총 1000 원",
                 Description = ""
             });
         }

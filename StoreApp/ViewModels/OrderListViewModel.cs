@@ -54,51 +54,51 @@ public partial class OrderListViewModel : BaseViewModel
     }
 
     [RelayCommand]
-    private async void OnReceiveClicked()
+    private void OnReceiveClicked()
     {
-        var items = await dataService.GetItems();
-        Items.Clear();
-        foreach (var item in items)
-        {
-            if(item.Status.Equals(AppResources.ReceiveTitle))
-                Items.Add(item);
-        }
+        //var items = await dataService.GetItems();
+        //Items.Clear();
+        //foreach (var item in items)
+        //{
+        //    if(item.Status.Equals(AppResources.ReceiveTitle))
+        //        Items.Add(item);
+        //}
     }
 
     [RelayCommand]
-    private async void OnAcceptClicked()
+    private void OnAcceptClicked()
     {
-        var items = await dataService.GetItems();
-        Items.Clear();
-        foreach (var item in items)
-        {
-            if (item.Status.Equals(AppResources.AcceptTitle))
-                Items.Add(item);
-        }
+        //var items = await dataService.GetItems();
+        //Items.Clear();
+        //foreach (var item in items)
+        //{
+        //    if (item.Status.Equals(AppResources.AcceptTitle))
+        //        Items.Add(item);
+        //}
     }
 
     [RelayCommand]
-    private async void OnInProcessClicked()
+    private void OnInProcessClicked()
     {
-        var items = await dataService.GetItems();
-        Items.Clear();
-        foreach (var item in items)
-        {
-            if (item.Status.Equals(AppResources.InProcessTitle))
-                Items.Add(item);
-        }
+        //var items = await dataService.GetItems();
+        //Items.Clear();
+        //foreach (var item in items)
+        //{
+        //    if (item.Status.Equals(AppResources.InProcessTitle))
+        //        Items.Add(item);
+        //}
     }
 
     [RelayCommand]
-    private async void OnCompleateClicked()
+    private void OnCompleateClicked()
     {
-        var items = await dataService.GetItems();
-        Items.Clear();
-        foreach (var item in items)
-        {
-            if (item.Status.Equals(AppResources.CompleateTitle))
-                Items.Add(item);
-        }
+        //var items = await dataService.GetItems();
+        //Items.Clear();
+        //foreach (var item in items)
+        //{
+        //    if (item.Status.Equals(AppResources.CompleateTitle))
+        //        Items.Add(item);
+        //}
     }
 
     [RelayCommand]

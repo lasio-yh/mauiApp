@@ -13,18 +13,14 @@
             <VerticalStackLayout Spacing="25" Padding="30" HorizontalOptions="Fill">
                 <HorizontalStackLayout HorizontalOptions="Center" VerticalOptions="Start">
                     <Button Text="{x:Static res:AppResources.ReceiveTitle}" HorizontalOptions="Start" Command="{Binding ReceiveClickedCommand}" />
-                    <Label Text="14 건" VerticalOptions="Center" HorizontalOptions="End" />
                     <Button Text="{x:Static res:AppResources.AcceptTitle}" HorizontalOptions="Start" Command="{Binding AcceptClickedCommand}" />
-                    <Label Text="5 건" VerticalOptions="Center" HorizontalOptions="End" />
                     <Button Text="{x:Static res:AppResources.InProcessTitle}" HorizontalOptions="Start" Command="{Binding InProcessClickedCommand}" />
-                    <Label Text="35 건" VerticalOptions="Center" HorizontalOptions="End" />
                     <Button Text="{x:Static res:AppResources.CompleateTitle}" HorizontalOptions="Start" Command="{Binding CompleateClickedCommand}"/>
-                    <Label Text="10 건" VerticalOptions="Center" HorizontalOptions="End" />
                 </HorizontalStackLayout>
                 <CollectionView ItemsSource="{Binding Items}" RemainingItemsThreshold="10" RemainingItemsThresholdReachedCommand="{Binding LoadMoreCommand}">
                     <CollectionView.ItemTemplate>
                         <DataTemplate x:DataType="m:OrderItem">
-                            <Frame CornerRadius="5" Padding="10,10,10,100" >
+                            <Frame CornerRadius="5" Margin="10,10,10,20" >
                                 <Frame.GestureRecognizers>
                                     <TapGestureRecognizer Command="{Binding Source={RelativeSource AncestorType={x:Type vm:OrderListViewModel}}, Path=GoToDetailsCommand}" CommandParameter="{Binding .}" />
                                 </Frame.GestureRecognizers>

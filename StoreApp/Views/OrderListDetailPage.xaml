@@ -9,52 +9,25 @@
              x:DataType="vm:OrderListDetailViewModel">
     <ScrollView>
         <VerticalStackLayout Spacing="5">
-            <Label Text="{x:Static res:AppResources.OrderBastTitle}" FontSize="Caption" HorizontalOptions="Start" />
-            <HorizontalStackLayout Padding="15,0">
-                <Label Text="{x:Static res:AppResources.OrderNoTitle}" FontSize="Subtitle" HorizontalOptions="Start" />
-                <Editor Text="{Binding Item.Id}" Margin="15,0" FontSize="Medium" HorizontalOptions="End" AutoSize="TextChanges" />
-            </HorizontalStackLayout>
-            <HorizontalStackLayout Padding="15,0" >
-                <Label Text="{x:Static res:AppResources.CustomerAddressTitle}" FontSize="Subtitle" HorizontalOptions="Start" />
-                <Editor Text="{Binding Item.CustomerAddress}"  Margin="15,0" FontSize="Medium" HorizontalOptions="End" AutoSize="TextChanges" />
-            </HorizontalStackLayout>
-            <HorizontalStackLayout Padding="15,0" >
-                <Label Text="{x:Static res:AppResources.CustomerTelTitle}" FontSize="Subtitle" HorizontalOptions="Start" />
-                <Editor Text="{Binding Item.CustomerTel}" Margin="15,0" FontSize="Medium" HorizontalOptions="End" AutoSize="TextChanges" />
-            </HorizontalStackLayout>
-            <HorizontalStackLayout Padding="15,0" >
-                <Label Text="{x:Static res:AppResources.CustomerNoticeTitle}" FontSize="Subtitle" HorizontalOptions="Start" />
-                <Editor Text="{Binding Item.CustomerNotice}" Margin="15,0"  FontSize="Medium" HorizontalOptions="End" AutoSize="TextChanges" />
-            </HorizontalStackLayout>
-            <HorizontalStackLayout Padding="15,0" >
-                <Label Text="{x:Static res:AppResources.DeliveryNoticeTitle}" FontSize="Subtitle" HorizontalOptions="Start" />
-                <Editor Text="{Binding Item.DeliveryNotice}" Margin="15,0" FontSize="Medium" HorizontalOptions="End" AutoSize="TextChanges" />
-            </HorizontalStackLayout>
-            <HorizontalStackLayout Padding="15,0" >
-                <Label Text="{x:Static res:AppResources.StoreNoticeTitle}" FontSize="Subtitle" HorizontalOptions="Start" />
-                <Editor Text="{Binding Item.StoreNotice}" Margin="15,0" FontSize="Medium" HorizontalOptions="End" AutoSize="TextChanges" />
-            </HorizontalStackLayout>
-            <HorizontalStackLayout Padding="15,0" >
-                <Label Text="{x:Static res:AppResources.OrderMenu}" FontSize="Subtitle" HorizontalOptions="Start" />
-                <Editor Text="{Binding Item.Menu}" Margin="15,0" FontSize="Medium" HorizontalOptions="End" AutoSize="TextChanges" />
-            </HorizontalStackLayout>
-            <Label Text="{x:Static res:AppResources.PaymentInfoTitle}" FontSize="Caption" HorizontalOptions="Start" />
-            <HorizontalStackLayout Padding="15,0" >
-                <Label Text="{x:Static res:AppResources.TotalOrderCost}" FontSize="Subtitle" HorizontalOptions="Start" />
-                <Editor Text="{Binding Item.OrderCost}" Margin="15,0" FontSize="Medium" HorizontalOptions="End" AutoSize="TextChanges" />
-            </HorizontalStackLayout>
-            <HorizontalStackLayout Padding="15,0" >
-                <Label Text="{x:Static res:AppResources.DiscountCost}" FontSize="Subtitle" HorizontalOptions="Start" />
-                <Editor Text="{Binding Item.DiscountCost}" Margin="15,0" FontSize="Medium" HorizontalOptions="End" AutoSize="TextChanges" />
-            </HorizontalStackLayout>
-            <HorizontalStackLayout Padding="15,0" >
-                <Label Text="{x:Static res:AppResources.DeliveryCost}" FontSize="Subtitle" HorizontalOptions="Start" />
-                <Editor Text="{Binding Item.DeliveraCost}" Margin="15,0" FontSize="Medium" HorizontalOptions="End" AutoSize="TextChanges" />
-            </HorizontalStackLayout>
-            <HorizontalStackLayout Padding="15,0" >
-                <Label Text="{x:Static res:AppResources.TotalPaymentCost}" FontSize="Subtitle" HorizontalOptions="Start" />
-                <Editor Text="{Binding Item.PaymentCost}" Margin="15,0"  FontSize="Medium" HorizontalOptions="End" AutoSize="TextChanges" />
-            </HorizontalStackLayout>
+            <TableView Intent="Menu" Margin="10,10,0,10">
+                <TableRoot>
+                    <TableSection Title="{x:Static res:AppResources.OrderBastTitle}">
+                        <TextCell Text="{x:Static res:AppResources.OrderNoTitle}" Detail="{Binding Item.Id}" />
+                        <TextCell Text="{x:Static res:AppResources.CustomerAddressTitle}" Detail="{Binding Item.CustomerAddress}" />
+                        <TextCell Text="{x:Static res:AppResources.CustomerTelTitle}" Detail="{Binding Item.CustomerTel}" />
+                        <TextCell Text="{x:Static res:AppResources.CustomerNoticeTitle}" Detail="{Binding Item.CustomerNotice}" />
+                        <TextCell Text="{x:Static res:AppResources.DeliveryNoticeTitle}" Detail="{Binding Item.DeliveryNotice}" />
+                        <TextCell Text="{x:Static res:AppResources.StoreNoticeTitle}" Detail="{Binding Item.StoreNotice}" />
+                        <TextCell Text="{x:Static res:AppResources.OrderMenu}" Detail="{Binding Item.Menu}" />
+                    </TableSection>
+                    <TableSection Title="{x:Static res:AppResources.PaymentInfoTitle}">
+                        <TextCell Text="{x:Static res:AppResources.TotalOrderCost}" Detail="{Binding Item.OrderCost}" />
+                        <TextCell Text="{x:Static res:AppResources.DiscountCost}" Detail="{Binding Item.DiscountCost}" />
+                        <TextCell Text="{x:Static res:AppResources.DeliveryCost}" Detail="{Binding Item.DeliveraCost}" />
+                        <TextCell Text="{x:Static res:AppResources.TotalPaymentCost}" Detail="{Binding Item.PaymentCost}" />
+                    </TableSection>
+                </TableRoot>
+            </TableView>
             <HorizontalStackLayout HorizontalOptions="Center">
                 <Button Command="{Binding OkCommand}" Text="{x:Static res:AppResources.OrderAcceptTitle}" FontSize="Large" Margin="10" />
                 <Button Command="{Binding RefuseCommand}" Text="{x:Static res:AppResources.OrderRefuseTitle}" FontSize="Large" Margin="10" />

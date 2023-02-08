@@ -2,7 +2,7 @@
 
 public class OrderItem
 {
-    public int Id { get; set; }  
+    public string Id { get; set; }
 
     public string Title { get; set; }
 
@@ -10,11 +10,11 @@ public class OrderItem
 
     public string Status { get; set; }
 
-    public DateTime ReceiveTime { get; set; }
+    public string ReceiveTime { get; set; }
 
-    public DateTime CompleateTime { get; set; }
+    public string CompleateTime { get; set; }
 
-    public DateTime AcceptTime { get; set; }
+    public string AcceptTime { get; set; }
 
     public string Menu { get; set; }
 
@@ -32,11 +32,11 @@ public class OrderItem
 
     public string DeliveryNotice { get; set; }
 
-    public int OrderCost { get; set; }
+    public string OrderCost { get; set; }
 
-    public int PaymentCost { get; set; }
+    public string PaymentCost { get; set; }
 
-    public int DiscountCost { get; set; }
+    public string DiscountCost { get; set; }
 
-    public int DeliveraCost { get; set; }
+    public string DeliveraCost { get; set; }
 }

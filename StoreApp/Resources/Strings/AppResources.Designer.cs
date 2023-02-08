@@ -277,11 +277,119 @@ namespace StoreApp.Resources.Strings {
         }
         
         /// <summary>
+        ///   가게 주소과(와) 유사한 지역화된 문자열을 찾습니다.
+        /// </summary>
+        internal static string StoreAddress {
+            get {
+                return ResourceManager.GetString("StoreAddress", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   가게 기본 정보과(와) 유사한 지역화된 문자열을 찾습니다.
+        /// </summary>
+        internal static string StoreBaseInfo {
+            get {
+                return ResourceManager.GetString("StoreBaseInfo", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   가게 기타 정보과(와) 유사한 지역화된 문자열을 찾습니다.
+        /// </summary>
+        internal static string StoreEtcInfo {
+            get {
+                return ResourceManager.GetString("StoreEtcInfo", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   휴무일과(와) 유사한 지역화된 문자열을 찾습니다.
+        /// </summary>
+        internal static string StoreHolyday {
+            get {
+                return ResourceManager.GetString("StoreHolyday", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   가게 메뉴과(와) 유사한 지역화된 문자열을 찾습니다.
+        /// </summary>
+        internal static string StoreMenu {
+            get {
+                return ResourceManager.GetString("StoreMenu", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   가게 명과(와) 유사한 지역화된 문자열을 찾습니다.
+        /// </summary>
+        internal static string StoreName {
+            get {
+                return ResourceManager.GetString("StoreName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   가게 요청사항과(와) 유사한 지역화된 문자열을 찾습니다.
         /// </summary>
         internal static string StoreNoticeTitle {
             get {
                 return ResourceManager.GetString("StoreNoticeTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   사업자 등록번호과(와) 유사한 지역화된 문자열을 찾습니다.
+        /// </summary>
+        internal static string StoreNumber {
+            get {
+                return ResourceManager.GetString("StoreNumber", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   영업시간과(와) 유사한 지역화된 문자열을 찾습니다.
+        /// </summary>
+        internal static string StoreOpenCloseTime {
+            get {
+                return ResourceManager.GetString("StoreOpenCloseTime", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   대표자 명과(와) 유사한 지역화된 문자열을 찾습니다.
+        /// </summary>
+        internal static string StoreOwner {
+            get {
+                return ResourceManager.GetString("StoreOwner", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   가게 운영 정보과(와) 유사한 지역화된 문자열을 찾습니다.
+        /// </summary>
+        internal static string StoreSettingInfo {
+            get {
+                return ResourceManager.GetString("StoreSettingInfo", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   가게 연락처과(와) 유사한 지역화된 문자열을 찾습니다.
+        /// </summary>
+        internal static string StoreTel {
+            get {
+                return ResourceManager.GetString("StoreTel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   업종/형태과(와) 유사한 지역화된 문자열을 찾습니다.
+        /// </summary>
+        internal static string StoreType {
+            get {
+                return ResourceManager.GetString("StoreType", resourceCulture);
             }
         }
         

@@ -1,51 +1,31 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+              xmlns:res="clr-namespace:StoreApp.Resources.Strings"
              xmlns:vm="clr-namespace:StoreApp.ViewModels"
              x:Class="StoreApp.Views.ManagePage"
              x:DataType="vm:ManageViewModel">
-    <!--<Grid RowDefinitions="*,Auto">
-        <ScrollView Grid.Row="0" Grid.Column="1">
-            <VerticalStackLayout Margin="12"  Spacing="25" Padding="30,0" >
-                <Label Text="가게 코드" TextColor="{AppThemeBinding Light={StaticResource Primary}, Dark={StaticResource Black}}" FontSize="Large" HorizontalOptions="Start" />
-                <Label Text="{Binding Id}" FontSize="Medium" HorizontalOptions="Start" />
-                <Label Text="사업자 등록번호" TextColor="{AppThemeBinding Light={StaticResource Primary}, Dark={StaticResource Black}}" FontSize="Large" HorizontalOptions="Start" />
-                <Editor Text="{Binding StoreNo}" FontSize="Medium" HorizontalOptions="Start" />
-                <Label Text="대표자명" TextColor="{AppThemeBinding Light={StaticResource Primary}, Dark={StaticResource Black}}" FontSize="Large" HorizontalOptions="Start" />
-                <Editor Text="{Binding Owner}" FontSize="Medium" HorizontalOptions="Start" />
-                <Label Text="가게명" TextColor="{AppThemeBinding Light={StaticResource Primary}, Dark={StaticResource Black}}" FontSize="Large" HorizontalOptions="Start" />
-                <Editor Text="{Binding StoreName}" FontSize="Medium" HorizontalOptions="Start" />
-                <Label Text="우편번호" TextColor="{AppThemeBinding Light={StaticResource Primary}, Dark={StaticResource Black}}" FontSize="Large" HorizontalOptions="Start" />
-                <Editor Text="{Binding StoreAddressNo}"  FontSize="Medium" HorizontalOptions="Start" />
-                <Label Text="가게 주소" TextColor="{AppThemeBinding Light={StaticResource Primary}, Dark={StaticResource Black}}" FontSize="Large" HorizontalOptions="Start" />
-                <Editor Text="{Binding StoreAddress}" FontSize="Medium" HorizontalOptions="Start" />
-                <Label Text="가게 연락처1" TextColor="{AppThemeBinding Light={StaticResource Primary}, Dark={StaticResource Black}}" FontSize="Large" HorizontalOptions="Start" />
-                <Editor Text="{Binding StoreTel1}" FontSize="Medium" HorizontalOptions="Start" />
-                <Label Text="가게 연락처2" TextColor="{AppThemeBinding Light={StaticResource Primary}, Dark={StaticResource Black}}"  FontSize="Large" HorizontalOptions="Start" />
-                <Editor Text="{Binding StoreTel2}" FontSize="Medium" HorizontalOptions="Start" />
-            </VerticalStackLayout>
-        </ScrollView>
-        <HorizontalStackLayout Grid.Row="1" HorizontalOptions="End" Spacing="25" Padding="30,0" >
-            <Button Text="저장" SemanticProperties.HeadingLevel="Level1" FontSize="32" HorizontalOptions="End" Command="{Binding ApplyClickedCommand}"/>
-        </HorizontalStackLayout>
-    </Grid>-->
-    <TableView Intent="Menu" Margin="0,0,0,10">
-        <TableRoot>
-            <TableSection Title="가게 기본정보">
-                <TextCell Text="1. 가게 명" Detail="Learn about .NET MAUI and what it provides." />
-                <TextCell Text="2. 대표자 명" Detail="Learn about the visual elements in .NET MAUI" />
-                <TextCell Text="3. 사업자 등록번호" Detail="Learn about the .NET MAUI controls that display text." />
-                <TextCell Text="4. 가게 주소" Detail="Learn how to size .NET MAUI controls on screen." />
-                <TextCell Text="5. 연락처" Detail="Learn more about creating your UI in XAML." />
-            </TableSection>
-            <TableSection Title="가게 운영정보">
-                <TextCell Text="1. 업종/형태" Detail="Learn about .NET MAUI and what it provides." />
-                <TextCell Text="2. 영업시간" Detail="Learn about the visual elements in .NET MAUI" />
-                <TextCell Text="3. 휴무일" Detail="Learn about the .NET MAUI controls that display text." />
-            </TableSection>
-            <TableSection Title="가게 기타정보">
-                <TextCell Text="1. 가게 메뉴" Detail="Learn about .NET MAUI and what it provides." />
-            </TableSection>
-        </TableRoot>
-    </TableView>
+    <ScrollView>
+        <VerticalStackLayout Spacing="5">
+            <TableView Intent="Menu" Margin="10,10,0,10">
+                <TableRoot>
+                    <TableSection Title="{x:Static res:AppResources.StoreBaseInfo}" >
+                        <TextCell Text="{x:Static res:AppResources.StoreName}" Detail="{Binding StoreName}" />
+                        <TextCell Text="{x:Static res:AppResources.StoreOwner}" Detail="{Binding StoreOwner}" />
+                        <TextCell Text="{x:Static res:AppResources.StoreNumber}" Detail="{Binding StoreNumber}" />
+                        <TextCell Text="{x:Static res:AppResources.StoreAddress}" Detail="{Binding StoreAddress}" />
+                        <TextCell Text="{x:Static res:AppResources.StoreTel}" Detail="{Binding StoreTel}" />
+                    </TableSection>
+                    <TableSection Title="{x:Static res:AppResources.StoreSettingInfo}">
+                        <TextCell Text="{x:Static res:AppResources.StoreType}" Detail="{Binding StoreType}" />
+                        <TextCell Text="{x:Static res:AppResources.StoreOpenCloseTime}" Detail="{Binding StoreOpenCloseTime}" />
+                        <TextCell Text="{x:Static res:AppResources.StoreHolyday}" Detail="{Binding StoreHolyday}" />
+                    </TableSection>
+                    <TableSection Title="{x:Static res:AppResources.StoreEtcInfo}">
+                        <TextCell Text="{x:Static res:AppResources.StoreMenu}" Detail="{Binding StoreMenu}" />
+                    </TableSection>
+                </TableRoot>
+            </TableView>
+        </VerticalStackLayout>
+    </ScrollView>
 </ContentPage>
