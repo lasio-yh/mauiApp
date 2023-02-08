@@ -31,7 +31,7 @@
                                     </HorizontalStackLayout>
                                     <Label Text="{Binding AcceptTime}" TextColor="{AppThemeBinding Light={StaticResource Primary}, Dark={StaticResource Black}}" FontSize="Medium" HorizontalOptions="Center" />
                                     <Label Text="{Binding CustomerAddress}" TextColor="{AppThemeBinding Light={StaticResource Primary}, Dark={StaticResource Black}}" MaxLines="3" FontSize="Title" HorizontalOptions="Center" />
-                                    <HorizontalStackLayout VerticalOptions="Fill" HorizontalOptions="Fill" >
+                                    <HorizontalStackLayout VerticalOptions="End" HorizontalOptions="Fill" >
                                         <Button Text="{x:Static res:AppResources.CallDeliveryTitle}" FontSize="Small" HorizontalOptions="End" />
                                         <Button Text="{x:Static res:AppResources.ReceiptOutputTitle}" FontSize="Small" HorizontalOptions="End" />
                                         <Button Text="{x:Static res:AppResources.CancleTitle}" FontSize="Small" HorizontalOptions="End" />
